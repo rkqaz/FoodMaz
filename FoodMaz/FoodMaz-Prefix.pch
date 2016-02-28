@@ -1,0 +1,33 @@
+//
+//  FoodMaz-Prefix.pch
+//  FoodMaz
+//
+//  Created by Ravi Kiran on 2/22/16.
+//  Copyright © 2016 Ravi Kiran. All rights reserved.
+//
+
+#ifndef FoodMaz_Prefix_pch
+#define FoodMaz_Prefix_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//Parse
+#import <Parse/Parse.h>
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <ParseUI/ParseUI.h>
+
+//Facebook
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginManager.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+//classes
+#import "FM_SaladStack.h"
+#import "FM_Color.h"
+#import "FM_Font.h"
+#import "FM_SaladStackView.h"
+
+#endif /* FoodMaz_Prefix_pch */

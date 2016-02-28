@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SaladCellIdentifier" rowHeight="161" id="KGk-i7-Jjw" customClass="SaladTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="STEP 1:  CHOOSE YOUR SALAD BED (ANY 1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIz-SB-6ZE">
+                        <rect key="frame" x="15" y="7" width="323" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5ab-wZ-nLu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzg-Qm-UFs" customClass="FM_ScrollView">
+                        <rect key="frame" x="8" y="27" width="336" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="WIl-f9-Kdu"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kzg-Qm-UFs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FaK-6x-2uH"/>
+                    <constraint firstItem="Kzg-Qm-UFs" firstAttribute="top" secondItem="HIz-SB-6ZE" secondAttribute="bottom" constant="4" id="NYL-On-hnp"/>
+                    <constraint firstItem="HIz-SB-6ZE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Q1D-5g-7tN"/>
+                    <constraint firstItem="HIz-SB-6ZE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Yxm-6b-QJG"/>
+                    <constraint firstItem="Kzg-Qm-UFs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="cOF-DS-aiB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HIz-SB-6ZE" secondAttribute="trailing" constant="6" id="q9Z-pQ-att"/>
+                    <constraint firstItem="Kzg-Qm-UFs" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="3" id="wHt-Je-XQS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="saladStackScrollView" destination="Kzg-Qm-UFs" id="aM1-FR-u3T"/>
+                <outlet property="title" destination="HIz-SB-6ZE" id="q4c-xw-IJW"/>
+            </connections>
+            <point key="canvasLocation" x="-104" y="-47.5"/>
+        </tableViewCell>
+    </objects>
+</document>
