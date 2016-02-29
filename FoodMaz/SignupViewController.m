@@ -37,14 +37,14 @@
         
         if(error) {
         
-            NSLog(@"Error:%@",error.localizedDescription);
+            FM_Log(@"Error:%@",error.localizedDescription);
             
 
         } else {
         
             [self performSegueWithIdentifier:@"push_Home" sender:self];
 
-            NSLog(@"User Sucessfully created");
+            FM_Log(@"User Sucessfully created");
         }
     }];
 }

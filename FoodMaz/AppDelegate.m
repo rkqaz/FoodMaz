@@ -54,9 +54,25 @@
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     
-   // [PFFacebookUtils in:@"YOUR_FB_APP_ID"];
-    
 
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+    if ([PFUser currentUser]) {
+    
+        UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+        
+        [self.window setRootViewController:rootViewController];
+        
+ 
+    } else {
+    
+        UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        
+        [self.window setRootViewController:rootViewController];
+
+    }
+
+    [self.window makeKeyAndVisible];
 
     return YES;
 }

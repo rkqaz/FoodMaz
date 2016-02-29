@@ -12,6 +12,8 @@
 
 #define kRowHeight 155.0f;
 
+#import "FM_SaladManager.h"
+
 
 #import "SaladTableViewCell.h"
 
@@ -33,7 +35,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded. The first 100 objects are available in objects
-            NSLog(@"Objects:%@",objects);
+            FM_Log(@"Objects:%@",objects);
             
             //assign result
             self.saladStackdata = objects;
@@ -42,13 +44,19 @@
             [self.saladstackTable reloadData];
         } else {
             // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
+            FM_Log(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
     
     
+    self.salad = [[FM_Salad alloc] init];
+    
+    
     
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -145,15 +153,44 @@
 
 - (void)selectedStack:(FM_SaladStack *)stack
 {
+    
 
-    NSLog(@" %s Selected Stack:%@",__FUNCTION__,stack);
+   FM_Log(@" %s Selected Stack:%@",__FUNCTION__,stack);
+    
+    ///if (![[FM_SaladManager sharedManager] salad]) {
+    
+    
+        [self.salad validatateSaladStack:stack result:^(BOOL success, NSString *errorMessage) {
+            
+            if (!success) {
+                
+                [self showAlertWithMessage:errorMessage];
+            }
+        }];
+
+    FM_Log(@"Salad Price:%i",(int)self.salad.price);
+
+    [[FM_SaladManager sharedManager] setSalad:self.salad];
+    //}
+    
+    
 }
 
 - (void)deSelectedStack:(FM_SaladStack *)stack
 {
-    NSLog(@" %s Selected Stack:%@",__FUNCTION__,stack);
+    FM_Log(@" %s Selected Stack:%@",__FUNCTION__,stack);
+    
+    self.salad = [[FM_SaladManager sharedManager] salad];
+   
+    [self.salad deleteStackItem:stack];
+    
+    FM_Log(@"Salad Price:%i",(int)self.salad.price);
+    [[FM_SaladManager sharedManager] setSalad:self.salad];
+
 
 }
+
+
 /*
 #pragma mark - Navigation
 

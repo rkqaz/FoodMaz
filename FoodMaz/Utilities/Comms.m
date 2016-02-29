@@ -23,9 +23,9 @@
 		// Was login successful ?
 		if (!user) {
 			if (!error) {
-				NSLog(@"The user cancelled the Facebook login.");
+				FM_Log(@"The user cancelled the Facebook login.");
 			} else {
-				NSLog(@"An error occurred: %@", error.localizedDescription);
+				FM_Log(@"An error occurred: %@", error.localizedDescription);
 			}
 			
 			// Callback - login failed
@@ -34,9 +34,9 @@
 			}
 		} else {
 			if (user.isNew) {
-				NSLog(@"User signed up and logged in through Facebook!");
+				FM_Log(@"User signed up and logged in through Facebook!");
 			} else {
-				NSLog(@"User logged in through Facebook!");
+				FM_Log(@"User logged in through Facebook!");
 			}
 			
             FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
@@ -45,9 +45,9 @@
                                     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
                                         if (error) {
                                             
-                                            NSLog(@"Error :%@",error.localizedDescription);
+                                            FM_Log(@"Error :%@",error.localizedDescription);
                                         }
-                                        NSLog(@"Error :%@",error.localizedDescription);
+                                        FM_Log(@"Error :%@",error.localizedDescription);
                                     }];
             
 

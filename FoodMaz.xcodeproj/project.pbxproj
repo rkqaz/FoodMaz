@@ -29,8 +29,7 @@
 		B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85360F11C82DCA600CD0276 /* ParseUI.framework */; };
 		B85360F61C83103B00CD0276 /* FM_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360F51C83103B00CD0276 /* FM_Color.m */; };
 		B85360F91C83104D00CD0276 /* FM_Font.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360F81C83104D00CD0276 /* FM_Font.m */; };
-		B85360FB1C83329900CD0276 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85360FA1C83329900CD0276 /* Parse.framework */; };
-		B85360FE1C83334300CD0276 /* FM_CustomSalad.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360FD1C83334300CD0276 /* FM_CustomSalad.m */; };
+		B85360FE1C83334300CD0276 /* FM_SaladManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360FD1C83334300CD0276 /* FM_SaladManager.m */; };
 		B892B6851C7980D00023FEF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6841C7980D00023FEF1 /* QuartzCore.framework */; };
 		B892B6871C7980D70023FEF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6861C7980D70023FEF1 /* Security.framework */; };
 		B892B6891C7980E00023FEF1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6881C7980E00023FEF1 /* Social.framework */; };
@@ -46,6 +45,8 @@
 		B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69C1C79815A0023FEF1 /* Foundation.framework */; };
 		B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69E1C7981690023FEF1 /* libsqlite3.tbd */; };
 		B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6A01C7981720023FEF1 /* libz.tbd */; };
+		B8B4A81A1C84142200A92A3A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B4A8191C84142200A92A3A /* Parse.framework */; };
+		B8B4A81D1C84295800A92A3A /* FM_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */; };
 		B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B01C7AD53D003DB59D /* Bolts.framework */; };
 		B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */; };
 		B8C949B81C7B32EC003DB59D /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C949B71C7B32EC003DB59D /* SignupViewController.m */; };
@@ -91,9 +92,8 @@
 		B85360F51C83103B00CD0276 /* FM_Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Color.m; sourceTree = "<group>"; };
 		B85360F71C83104D00CD0276 /* FM_Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Font.h; sourceTree = "<group>"; };
 		B85360F81C83104D00CD0276 /* FM_Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Font.m; sourceTree = "<group>"; };
-		B85360FA1C83329900CD0276 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		B85360FC1C83334300CD0276 /* FM_CustomSalad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_CustomSalad.h; sourceTree = "<group>"; };
-		B85360FD1C83334300CD0276 /* FM_CustomSalad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_CustomSalad.m; sourceTree = "<group>"; };
+		B85360FC1C83334300CD0276 /* FM_SaladManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladManager.h; sourceTree = "<group>"; };
+		B85360FD1C83334300CD0276 /* FM_SaladManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladManager.m; sourceTree = "<group>"; };
 		B85360FF1C8333AE00CD0276 /* FM_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Constants.h; sourceTree = "<group>"; };
 		B892B6841C7980D00023FEF1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B892B6861C7980D70023FEF1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -110,6 +110,9 @@
 		B892B69C1C79815A0023FEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B892B69E1C7981690023FEF1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B892B6A01C7981720023FEF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B8B4A8191C84142200A92A3A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B8B4A81B1C84295800A92A3A /* FM_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_BaseViewController.h; sourceTree = "<group>"; };
+		B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_BaseViewController.m; sourceTree = "<group>"; };
 		B8C949B01C7AD53D003DB59D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B8C949B61C7B32EC003DB59D /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
@@ -129,7 +132,7 @@
 				B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */,
 				B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */,
 				B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */,
-				B85360FB1C83329900CD0276 /* Parse.framework in Frameworks */,
+				B8B4A81A1C84142200A92A3A /* Parse.framework in Frameworks */,
 				B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */,
 				B892B69B1C7981520023FEF1 /* CoreGraphics.framework in Frameworks */,
 				B892B6991C79814A0023FEF1 /* CFNetwork.framework in Frameworks */,
@@ -210,11 +213,13 @@
 				B85360F71C83104D00CD0276 /* FM_Font.h */,
 				B85360F81C83104D00CD0276 /* FM_Font.m */,
 				B85360EA1C82DA1E00CD0276 /* FM_SaladStack.h */,
+				B85360EB1C82DA1E00CD0276 /* FM_SaladStack.m */,
 				B85360ED1C82DA3300CD0276 /* FM_Salad.h */,
 				B85360EE1C82DA3300CD0276 /* FM_Salad.m */,
-				B85360EB1C82DA1E00CD0276 /* FM_SaladStack.m */,
 				B85360E71C82DA0500CD0276 /* FM_SaladStackView.h */,
 				B85360E81C82DA0500CD0276 /* FM_SaladStackView.m */,
+				B8B4A81B1C84295800A92A3A /* FM_BaseViewController.h */,
+				B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */,
 			);
 			path = FoodMaz;
 			sourceTree = "<group>";
@@ -225,8 +230,8 @@
 				B8C949B91C7B3909003DB59D /* FoodMaz-Prefix.pch */,
 				B85360FF1C8333AE00CD0276 /* FM_Constants.h */,
 				B84A907D1C705FC500D214F1 /* main.m */,
-				B85360FC1C83334300CD0276 /* FM_CustomSalad.h */,
-				B85360FD1C83334300CD0276 /* FM_CustomSalad.m */,
+				B85360FC1C83334300CD0276 /* FM_SaladManager.h */,
+				B85360FD1C83334300CD0276 /* FM_SaladManager.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -258,7 +263,7 @@
 		B892B6A31C7981B80023FEF1 /* Parse Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B85360FA1C83329900CD0276 /* Parse.framework */,
+				B8B4A8191C84142200A92A3A /* Parse.framework */,
 				B85360F11C82DCA600CD0276 /* ParseUI.framework */,
 				B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */,
 				B8C949B01C7AD53D003DB59D /* Bolts.framework */,
@@ -350,11 +355,12 @@
 				B84A90811C705FC500D214F1 /* AppDelegate.m in Sources */,
 				B85360DE1C82C88F00CD0276 /* FM_ViewController.m in Sources */,
 				B84A907E1C705FC500D214F1 /* main.m in Sources */,
+				B8B4A81D1C84295800A92A3A /* FM_BaseViewController.m in Sources */,
 				B85360E61C82D60D00CD0276 /* FM_ScrollView.m in Sources */,
 				B8C949B81C7B32EC003DB59D /* SignupViewController.m in Sources */,
 				B85360D71C82BAAB00CD0276 /* OrderSaladViewController.m in Sources */,
 				B85360EF1C82DA3300CD0276 /* FM_Salad.m in Sources */,
-				B85360FE1C83334300CD0276 /* FM_CustomSalad.m in Sources */,
+				B85360FE1C83334300CD0276 /* FM_SaladManager.m in Sources */,
 				B85360E21C82D0A600CD0276 /* SaladTableViewCell.m in Sources */,
 				B85360F91C83104D00CD0276 /* FM_Font.m in Sources */,
 				B85360D11C82BA7B00CD0276 /* HomeViewController.m in Sources */,
@@ -486,6 +492,8 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
@@ -507,6 +515,8 @@
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/OtherFramework",
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",

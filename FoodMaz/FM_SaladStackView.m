@@ -7,6 +7,7 @@
 //
 
 #import "FM_SaladStackView.h"
+#import "FM_SaladManager.h"
 
 
 
@@ -68,7 +69,7 @@
     
     UIView * v = gesture.view;
     
-    NSLog(@"Gesture View Class %@",gesture.view.class);
+    //FM_Log(@"Gesture View Class %@",gesture.view.class);
     if ([v isKindOfClass:[FM_SaladStackView class]]) {
         
         
@@ -78,7 +79,6 @@
             
             //update selected field
             stackView.selected = !stackView.selected;
-            
             //set selected border color
             stackView.imgView.layer.borderColor = [UIColor orangeColor].CGColor;
             
@@ -89,19 +89,44 @@
                 [self.FM_SaladViewDelegate deSelectedStackItem:stackView.saladStack];
             }
 
+            
         } else { //<-- make selected
         
             //update selected field
             stackView.selected = !stackView.selected;
 
-            //set unSelected border color
-            stackView.imgView.layer.borderColor = [UIColor blueColor].CGColor;
-            
-            //delgate can reponds to selector
-            if ( (self.FM_SaladViewDelegate) &&[self.FM_SaladViewDelegate respondsToSelector:@selector(selectedStackItem:)]) {
+            if ([[FM_SaladManager sharedManager] salad]) {
                 
-                //call callback method
-                [self.FM_SaladViewDelegate selectedStackItem:stackView.saladStack];
+                //Validation for BED,INGREDIENT,SALAD
+                [[[FM_SaladManager sharedManager] salad] validatateSaladStack:stackView.saladStack result:^(BOOL success, NSString *errorMessage) {
+                    
+                    
+                    if(!errorMessage) { //<--- if validation success
+                        
+                        //set unSelected border color
+                        stackView.imgView.layer.borderColor = [UIColor blueColor].CGColor;
+                        
+                        //delgate can reponds to selector
+                        if ( (self.FM_SaladViewDelegate) &&[self.FM_SaladViewDelegate respondsToSelector:@selector(selectedStackItem:)]) {
+                            
+                            //call callback method
+                            [self.FM_SaladViewDelegate selectedStackItem:stackView.saladStack];
+                        }
+                        
+                    }
+            }];
+            
+        } else {
+            
+                //set unSelected border color
+                stackView.imgView.layer.borderColor = [UIColor blueColor].CGColor;
+                
+                //delgate can reponds to selector
+                if ( (self.FM_SaladViewDelegate) &&[self.FM_SaladViewDelegate respondsToSelector:@selector(selectedStackItem:)]) {
+                    
+                    //call callback method
+                    [self.FM_SaladViewDelegate selectedStackItem:stackView.saladStack];
+                }
             }
 
         }

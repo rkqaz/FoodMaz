@@ -25,7 +25,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded. The first 100 objects are available in objects
-            NSLog(@"Objects:%@",objects);
+            FM_Log(@"Objects:%@",objects);
 //            
 //            PFQueryCollectionViewController *controller = [[PFQueryCollectionViewController alloc] initWithClassName:@"SaladStacks"];
 //            UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)controller.collectionViewLayout;
@@ -34,7 +34,7 @@
 //
         } else {
             // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
+            FM_Log(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
     

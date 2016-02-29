@@ -10,6 +10,7 @@
 
 @implementation FM_SaladStack
 
+@synthesize itemType;
 
 
 @end

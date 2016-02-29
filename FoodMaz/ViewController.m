@@ -70,21 +70,21 @@
         [user fetch:&error];
 
         if (error) {
-            NSLog(@"Error:%@",error.localizedDescription);
+            FM_Log(@"Error:%@",error.localizedDescription);
 
         } else {
         
-            NSLog(@"Token:%@",user.sessionToken);
+            FM_Log(@"Token:%@",user.sessionToken);
             
-            NSLog(@"UserName:%@",user.username);
+            FM_Log(@"UserName:%@",user.username);
             if (!user) {
-                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+                FM_Log(@"Uh oh. The user cancelled the Facebook login.");
             } else if (user.isNew) {
-                NSLog(@"User signed up and logged in through Facebook!");
+                FM_Log(@"User signed up and logged in through Facebook!");
                 [self _loadData];
 
             } else {
-                NSLog(@"User logged in through Facebook!");
+                FM_Log(@"User logged in through Facebook!");
                 
                 [self _loadData];
             }
@@ -101,13 +101,13 @@
 //                                {
 //                                    if (error) {
 //                                        // Process error
-//                                        NSLog(@"Error:%@",error.localizedDescription);
+//                                        FM_Log(@"Error:%@",error.localizedDescription);
 //                                    } else if (result.isCancelled) {
 //                                        // Handle cancellations
-//                                        NSLog(@"User Cancelled");
+//                                        FM_Log(@"User Cancelled");
 //                                    } else {
 //                                        
-//                                        NSLog(@"Resukt:%@",result.grantedPermissions);
+//                                        FM_Log(@"Resukt:%@",result.grantedPermissions);
 //                                        // If you ask for multiple permissions at once, you
 //                                        // should check if specific permissions missing
 //                                        if ([result.grantedPermissions containsObject:@"email"]) {
@@ -131,11 +131,11 @@
         
         if (error) {
         
-            NSLog(@"Error:%@",error.localizedDescription);
+            FM_Log(@"Error:%@",error.localizedDescription);
         } else {
         
-            NSLog(@"email:%@",user.email);
-            NSLog(@"username:%@",user.username);
+            FM_Log(@"email:%@",user.email);
+            FM_Log(@"username:%@",user.username);
 
         }
     }];
@@ -149,14 +149,14 @@
             // result is a dictionary with the user's Facebook data
             NSDictionary *userData = (NSDictionary *)result;
             
-            NSLog(@"Result:%@",result);
+            FM_Log(@"Result:%@",result);
             //NSString *facebookID = userData[@"id"];
             PFUser *user = [PFUser currentUser];
             NSString *name = userData[@"name"];
 
-            NSLog(@"User.Usename:%@",user.username);
+            FM_Log(@"User.Usename:%@",user.username);
             
-            NSLog(@"User.Password:%@",user.password);
+            FM_Log(@"User.Password:%@",user.password);
 
            [user setUsername:name];
             

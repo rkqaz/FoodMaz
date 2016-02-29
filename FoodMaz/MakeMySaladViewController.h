@@ -10,7 +10,9 @@
 
 #import "FM_ScrollView.h"
 
-@interface MakeMySaladViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,FM_ScrollViewDelegate>
+@interface MakeMySaladViewController : FM_BaseViewController<UITableViewDataSource,UITableViewDelegate,FM_ScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *saladstackTable;
+
+@property (nonatomic,strong)FM_Salad *salad;
 @end

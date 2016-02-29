@@ -64,7 +64,7 @@
 //
 //    UIView * v = gesture.view;
 //    
-//    NSLog(@"Gesture View Class %@",gesture.view.class);
+//    FM_Log(@"Gesture View Class %@",gesture.view.class);
 //    if ([v isKindOfClass:[FM_SaladStackView class]]) {
 //    
 //    

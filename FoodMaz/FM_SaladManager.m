@@ -6,10 +6,18 @@
 //  Copyright © 2016 Ravi Kiran. All rights reserved.
 //
 
-#import "FM_CustomSalad.h"
+#import "FM_SaladManager.h"
 
-@implementation FM_CustomSalad
+@implementation FM_SaladManager
 
++ (instancetype)sharedManager {
+    static FM_SaladManager *sharedMyManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedMyManager = [[self alloc] init];
+    });
+    return sharedMyManager;
+}
 
 
 - (void)checkValidationforSaladBed
@@ -72,4 +80,8 @@
 
 }
 
+- (void)addSalad:(FM_Salad *)salad
+{
+
+}
 @end

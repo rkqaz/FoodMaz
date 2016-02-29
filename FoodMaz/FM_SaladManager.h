@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FM_CustomSalad : NSObject
+#import "FM_Salad.h"
+
+@interface FM_SaladManager : NSObject
 
 @property (nonatomic,strong)NSMutableArray *saladData;
+
+@property (nonatomic,assign)FM_Salad *salad;
++ (instancetype)sharedManager;
+
+- (void)addSalad:(FM_Salad *)salad;
 @end
