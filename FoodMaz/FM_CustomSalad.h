@@ -1,0 +1,14 @@
+//
+//  FM_CustomSalad.h
+//  FoodMaz
+//
+//  Created by Ravi Kiran on 2/28/16.
+//  Copyright © 2016 Ravi Kiran. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface FM_CustomSalad : NSObject
+
+@property (nonatomic,strong)NSMutableArray *saladData;
+@end

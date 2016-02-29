@@ -12,11 +12,6 @@
 
 #define kRowHeight 155.0f;
 
-#define kBed @"Bed"
-
-#define kIngredient @"Ingredient"
-
-#define kDressing @"Dressing"
 
 #import "SaladTableViewCell.h"
 
