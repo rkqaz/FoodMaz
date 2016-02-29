@@ -201,4 +201,21 @@
 }
 */
 
+- (IBAction)maktItForMeButonAction:(id)sender {
+    
+    
+    if (self.salad) {
+    
+        [self.salad performValidationOnSalad:^(NSString *errorMessage) {
+            
+            if(errorMessage) {
+            
+                [self showAlertWithMessage:errorMessage];
+            } else {
+            
+                FM_Log(@"SaladPrice:%d",(int)self.salad.price);
+            }
+        }];
+    }
+}
 @end

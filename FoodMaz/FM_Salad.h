@@ -26,14 +26,20 @@
 
 @property(nonnull,nonatomic,assign)FM_SaladStack *saladStack;
 
-// Validate SaladStack
-
-- (void)validatateSaladStack:(FM_SaladStack *)stackItem result:(void (^)(BOOL success,NSString *errorMessage))resultBlock;
-
-//Delete Stackitem
-- (void)deleteStackItem:(FM_SaladStack *)stackItem;
 //Error Message
 @property (nullable,nonatomic,retain)NSString *errorMessage;
 
+//Salad Price
 @property (nonatomic,assign)NSInteger price;
+// Validate SaladStack
+
+- (void)validatateSaladStack:(nonnull FM_SaladStack *)stackItem result:(nullable void (^)(BOOL success, NSString * errorMessage))resultBlock;
+
+//Delete Stackitem
+- (void)deleteStackItem:(nonnull FM_SaladStack *)stackItem;
+
+//validation on Salad
+- (void)performValidationOnSalad:(nullable void(^)(NSString *errorMessage))result;
+
+
 @end

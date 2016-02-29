@@ -14,5 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *saladstackTable;
 
+- (IBAction)maktItForMeButonAction:(id)sender;
 @property (nonatomic,strong)FM_Salad *salad;
 @end

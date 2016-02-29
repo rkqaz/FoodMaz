@@ -132,22 +132,31 @@
                         <viewControllerLayoutGuide type="bottom" id="8ss-3V-zeL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mUr-uj-prg">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gbJ-rN-wv0">
-                                <rect key="frame" x="0.0" y="40" width="500" height="450"/>
+                                <rect key="frame" x="0.0" y="64" width="496" height="450"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="mS5-86-xgZ" id="SNd-X9-x7G"/>
                                     <outlet property="delegate" destination="mS5-86-xgZ" id="GGm-lB-BSW"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNA-Ht-e8h">
+                                <rect key="frame" x="97" y="535" width="313" height="40"/>
+                                <color key="backgroundColor" red="0.51764705879999995" green="0.78039215689999997" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                <state key="normal" title="MAKE IT FOR ME"/>
+                                <connections>
+                                    <action selector="maktItForMeButonAction:" destination="mS5-86-xgZ" eventType="touchUpInside" id="a2W-k4-Hzz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="500" height="500"/>
+                    <size key="freeformSize" width="496" height="600"/>
                     <connections>
                         <outlet property="saladstackTable" destination="gbJ-rN-wv0" id="O2S-nx-QO6"/>
                     </connections>

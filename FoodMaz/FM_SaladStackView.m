@@ -101,7 +101,7 @@
                 [[[FM_SaladManager sharedManager] salad] validatateSaladStack:stackView.saladStack result:^(BOOL success, NSString *errorMessage) {
                     
                     
-                    if(!errorMessage) { //<--- if validation success
+                    if(success) { //<--- if validation success
                         
                         //set unSelected border color
                         stackView.imgView.layer.borderColor = [UIColor blueColor].CGColor;

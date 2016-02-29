@@ -93,6 +93,8 @@
                 [self.ingredients addObject:self.saladStack];
             
             valid = YES;
+            //Update Salad Price
+            self.price += [self.saladStack[@"Price"] integerValue];
 
         }
         
@@ -161,8 +163,8 @@
     
     NSString *type = stackItem[@"type"];
     
-    BOOL errored = YES;
-    
+    BOOL errored = NO;
+
     if (isBED(type)) { //<-- Bed
     
         FM_Log(@"Bed");
@@ -183,6 +185,8 @@
 
 
     }
+    
+    
     FM_Log(@"errored :%d",errored);
 
 
@@ -228,6 +232,26 @@
     }
 
 }
+
+
+- (void)performValidationOnSalad:(void(^)(NSString *errorMessage))result {
+
+    NSString *message = nil;
+    if (nil == self.bed || !self.bed) {
+    
+        message = @"Please select Bed";
+    } else if (self.ingredients && self.ingredients.count < 6) {
+    
+     message = @"Please select minimum 6 Ingredients";
+        
+    } else if (nil == self.dressing || !self.dressing) {
+    
+        message = @"Please select Dressing";
+    }
+    
+    result(message);
+}
+
 
 
 @end
