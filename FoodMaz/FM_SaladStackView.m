@@ -213,7 +213,7 @@
     
         self.imgView = imageView;
     }
-    /***********$$$$$$$$$$**ADDTITLE**$$$$$$$$$$$$$$$*****************/
+    /**********$$$$$$$$$$**ADDTITLE**$$$$$$$$$***************/
     //Add title
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, CGRectGetHeight(self.frame), 100.0f, 17.0f)];
     //Assaign value

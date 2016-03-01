@@ -79,7 +79,7 @@
     
     if (self.ingredients && self.ingredients.count > 0) {
         
-        if (self.ingredients.count > 6) {
+        if (self.ingredients.count >= 6) {
             
             //Display alert User can choose only 6 Ingredients
             

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface HomeViewController : FM_BaseViewController
+@interface HomeViewController : FM_BaseViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
 //DeliveryToME Button
 @property (weak, nonatomic) IBOutlet UIButton *delivertToMe;

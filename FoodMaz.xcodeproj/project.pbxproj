@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366E808C1C8618E200CD7A0E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		B81ED0A71C79908900A53A96 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */; };
 		B81ED0A91C79923D00A53A96 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */; };
 		B81ED0AF1C79A3D700A53A96 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = B81ED0AE1C79A3D700A53A96 /* Comms.m */; };
@@ -50,7 +51,6 @@
 		B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */; };
 		B8C949B81C7B32EC003DB59D /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C949B71C7B32EC003DB59D /* SignupViewController.m */; };
 		B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */; };
-		B8E798381C85606C00259465 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E798371C85606C00259465 /* Parse.framework */; };
 		B8E798481C85843000259465 /* foodbasket.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983B1C85843000259465 /* foodbasket.png */; };
 		B8E798491C85843000259465 /* saladbowl.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983C1C85843000259465 /* saladbowl.png */; };
 		B8E7984A1C85843000259465 /* spoonandfork.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983D1C85843000259465 /* spoonandfork.png */; };
@@ -65,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		366E808B1C8618E200CD7A0E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B81ED0AD1C79A3D700A53A96 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
@@ -129,7 +130,6 @@
 		B8C949B71C7B32EC003DB59D /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		B8C949B91C7B3909003DB59D /* FoodMaz-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodMaz-Prefix.pch"; sourceTree = "<group>"; };
 		B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		B8E798371C85606C00259465 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B8E7983B1C85843000259465 /* foodbasket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodbasket.png; sourceTree = "<group>"; };
 		B8E7983C1C85843000259465 /* saladbowl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saladbowl.png; sourceTree = "<group>"; };
 		B8E7983D1C85843000259465 /* spoonandfork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spoonandfork.png; sourceTree = "<group>"; };
@@ -148,13 +148,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366E808C1C8618E200CD7A0E /* Parse.framework in Frameworks */,
 				B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */,
 				B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */,
 				B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */,
 				B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */,
 				B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */,
 				B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */,
-				B8E798381C85606C00259465 /* Parse.framework in Frameworks */,
 				B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */,
 				B892B69B1C7981520023FEF1 /* CoreGraphics.framework in Frameworks */,
 				B892B6991C79814A0023FEF1 /* CFNetwork.framework in Frameworks */,
@@ -286,7 +286,7 @@
 		B892B6A31C7981B80023FEF1 /* Parse Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B8E798371C85606C00259465 /* Parse.framework */,
+				366E808B1C8618E200CD7A0E /* Parse.framework */,
 				B85360F11C82DCA600CD0276 /* ParseUI.framework */,
 				B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */,
 				B8C949B01C7AD53D003DB59D /* Bolts.framework */,
@@ -572,11 +572,15 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
 				INFOPLIST_FILE = FoodMaz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FoodMaz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,11 +613,15 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
 				INFOPLIST_FILE = FoodMaz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FoodMaz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
