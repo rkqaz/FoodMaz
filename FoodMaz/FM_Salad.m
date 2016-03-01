@@ -34,6 +34,7 @@
     
     BOOL valid = NO;
 
+    FM_Log(@"BED:%@",self.bed);
     if (self.bed && (nil != self.bed)) {
         
         
@@ -78,7 +79,7 @@
     
     if (self.ingredients && self.ingredients.count > 0) {
         
-        if (self.ingredients.count >= 6) {
+        if (self.ingredients.count > 6) {
             
             //Display alert User can choose only 6 Ingredients
             
@@ -109,9 +110,7 @@
         //Update Salad Price
         self.price += [self.saladStack[@"Price"] integerValue];
 
-
     }
-    
     
     FM_Log(@"Ingredients:%d",(int)self.ingredients.count);
     
@@ -135,6 +134,7 @@
        // [[NSNotificationCenter defaultCenter] postNotificationName:kSHOWALERT_NOTIFICATION object:nil userInfo:@{k_SHOWALERT_MESSAGE:@"You have already selected Dressing.  Please unselect the selceted and select new"}];
 
         self.errorMessage = @"You have already selected Dressing.  Please unselect the selceted and select new";
+        
         valid = NO;
     } else {
         
@@ -158,7 +158,6 @@
 
 {
     
-
     self.saladStack = stackItem;
     
     NSString *type = stackItem[@"type"];
@@ -183,12 +182,9 @@
         
        errored = [self checkValidationforSaladDressing];
 
-
     }
     
-    
     FM_Log(@"errored :%d",errored);
-
 
     resultBlock(errored,self.errorMessage);
 }
@@ -205,7 +201,6 @@
         
         self.bed = nil;
         
-        
         self.price -= [stackItem[@"Price"] integerValue];
         
     } else if(isIngredient(type)) { //<-- Ingredient
@@ -215,10 +210,9 @@
             [self.ingredients removeObject:stackItem];
             
             self.price -= [stackItem[@"Price"] integerValue];
-
         }
         
-        FM_Log(@"ingredients");
+        FM_Log(@"Ingredients");
         
     } else { //<-- Dressing
         
@@ -228,7 +222,6 @@
         
         self.price -= [stackItem[@"Price"] integerValue];
 
-        
     }
 
 }
@@ -249,8 +242,11 @@
         message = @"Please select Dressing";
     }
     
+    FM_Log(@"Salad Price:%i",(int)self.price);
     result(message);
 }
+
+
 
 
 

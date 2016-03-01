@@ -14,8 +14,11 @@
 
 @property (nonatomic,strong)NSMutableArray *saladData;
 
-@property (nonatomic,assign)FM_Salad *salad;
+@property (nonatomic,retain)FM_Salad *salad;
+
+@property (nonatomic,assign)NSInteger price;
 + (instancetype)sharedManager;
 
 - (void)addSalad:(FM_Salad *)salad;
+
 @end

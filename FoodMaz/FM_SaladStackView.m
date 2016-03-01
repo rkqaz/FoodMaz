@@ -92,8 +92,6 @@
             
         } else { //<-- make selected
         
-            //update selected field
-            stackView.selected = !stackView.selected;
 
             if ([[FM_SaladManager sharedManager] salad]) {
                 
@@ -103,6 +101,9 @@
                     
                     if(success) { //<--- if validation success
                         
+                        //update selected field
+                        stackView.selected = !stackView.selected;
+
                         //set unSelected border color
                         stackView.imgView.layer.borderColor = [UIColor blueColor].CGColor;
                         
@@ -113,20 +114,46 @@
                             [self.FM_SaladViewDelegate selectedStackItem:stackView.saladStack];
                         }
                         
+                    } else {
+                    
+                        if (self.FM_SaladViewDelegate && ([self.FM_SaladViewDelegate respondsToSelector:@selector(errorMessageInPickingSaladStack:)])) {
+                        
+                            //call callback Method
+                            
+                            [self.FM_SaladViewDelegate errorMessageInPickingSaladStack:errorMessage];
+                        }
                     }
             }];
             
         } else {
             
+                  //update selected field
+
+                 stackView.selected = !stackView.selected;
+
                 //set unSelected border color
                 stackView.imgView.layer.borderColor = [UIColor blueColor].CGColor;
+            
+            FM_Salad *salad = [[FM_Salad alloc] init];
+            
+            [salad validatateSaladStack:stackView.saladStack result:^(BOOL success, NSString * _Nonnull errorMessage) {
                 
-                //delgate can reponds to selector
-                if ( (self.FM_SaladViewDelegate) &&[self.FM_SaladViewDelegate respondsToSelector:@selector(selectedStackItem:)]) {
-                    
-                    //call callback method
-                    [self.FM_SaladViewDelegate selectedStackItem:stackView.saladStack];
+                if (success){
+                
+                    [[FM_SaladManager sharedManager] setSalad:salad];
+
+                    //delgate can reponds to selector
+                    if ( (self.FM_SaladViewDelegate) &&[self.FM_SaladViewDelegate respondsToSelector:@selector(selectedStackItem:)]) {
+                        
+                        //call callback method
+                        [self.FM_SaladViewDelegate selectedStackItem:stackView.saladStack];
+                    }
                 }
+            }];
+            
+            
+            
+            
             }
 
         }
@@ -186,7 +213,7 @@
     
         self.imgView = imageView;
     }
-    /*************************$$$$$$$$$$**ADDTITLE**$$$$$$$$$$$$$$$************************************/
+    /***********$$$$$$$$$$**ADDTITLE**$$$$$$$$$$$$$$$*****************/
     //Add title
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, CGRectGetHeight(self.frame), 100.0f, 17.0f)];
     //Assaign value

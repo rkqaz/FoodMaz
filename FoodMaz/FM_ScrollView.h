@@ -17,6 +17,9 @@
 - (void)selectedStack:(FM_SaladStack *)stack;
 - (void)deSelectedStack:(FM_SaladStack *)stack;
 
+- (void)errorinPickingStack:(NSString *)error;
+
+
 //- (void)HSSE_TextFieldDidBeginEditing:(id)textField;
 @end
 

@@ -11,4 +11,10 @@
 @interface FM_Font : NSObject
 
 +(UIFont *)labelFont;
+
++(UIFont *)regularFont;
+
++(UIFont *)regularFontWithSize:(int)size;
+
++(UIFont *)labelFontWithSize:(int)size;
 @end

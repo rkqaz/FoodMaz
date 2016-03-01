@@ -156,4 +156,15 @@
     }
 }
 
+
+- (void)errorMessageInPickingSaladStack:(NSString *)errorMessage
+{
+
+    if ( (self.FM_ScrollDelegate) &&[self.FM_ScrollDelegate respondsToSelector:@selector(deSelectedStack:)]) {
+        
+        //call callback method
+        [self.FM_ScrollDelegate errorinPickingStack:errorMessage];
+    }
+}
+
 @end

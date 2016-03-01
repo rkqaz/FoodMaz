@@ -31,6 +31,25 @@
     //register Nib for Tableview
     [self.saladstackTable registerNib:[UINib nibWithNibName:@"SaladTableViewCell" bundle:nil] forCellReuseIdentifier:kCellIdentifier];
     
+    //Initilaise Salad Object
+    
+    //Parse Query
+    [self pullDataFromParse];
+    
+    //Add dash Border for HealthTipView
+    [self.healthTipView.layer addSublayer:[self addDashedBorderWithColor:[FM_Color greenColor].CGColor]];
+    
+    
+    self.saladstackTable.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0);
+    
+}
+
+
+#pragma mark - PARSE QUERY
+
+- (void)pullDataFromParse
+{
+    //Query to pull data from Parse Server
     PFQuery *query = [PFQuery queryWithClassName:@"SaladStacks"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -48,15 +67,8 @@
         }
     }];
     
-    
-    self.salad = [[FM_Salad alloc] init];
-    
-    
-    
+
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -154,43 +166,60 @@
 - (void)selectedStack:(FM_SaladStack *)stack
 {
     
+    self.healthTipTextView.text = stack[@"HealthTip"];
 
-   FM_Log(@" %s Selected Stack:%@",__FUNCTION__,stack);
     
-    ///if (![[FM_SaladManager sharedManager] salad]) {
-    
-    
-        [self.salad validatateSaladStack:stack result:^(BOOL success, NSString *errorMessage) {
-            
-            if (!success) {
-                
-                [self showAlertWithMessage:errorMessage];
-            }
-        }];
+}
 
-    FM_Log(@"Salad Price:%i",(int)self.salad.price);
+- (void)errorinPickingStack:(NSString *)error
+{
 
-    [[FM_SaladManager sharedManager] setSalad:self.salad];
-    //}
-    
-    
+    [self showAlertWithMessage:error];
 }
 
 - (void)deSelectedStack:(FM_SaladStack *)stack
 {
     FM_Log(@" %s Selected Stack:%@",__FUNCTION__,stack);
     
-    self.salad = [[FM_SaladManager sharedManager] salad];
+    FM_Salad *salad = [[FM_SaladManager sharedManager] salad];
    
-    [self.salad deleteStackItem:stack];
+    [salad deleteStackItem:stack];
     
-    FM_Log(@"Salad Price:%i",(int)self.salad.price);
-    [[FM_SaladManager sharedManager] setSalad:self.salad];
+    FM_Log(@"Salad Price:%i",(int)salad.price);
+    [[FM_SaladManager sharedManager] setSalad:salad];
 
 
 }
 
 
+
+#pragma mark - Custom UI Methods
+
+/*
+ * Add Dash border
+ */
+- (CAShapeLayer *) addDashedBorderWithColor: (CGColorRef) color {
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    
+    CGSize frameSize = CGSizeMake(CGRectGetWidth(self.healthTipView.frame), CGRectGetHeight(self.healthTipView.frame));
+    
+    CGRect shapeRect = CGRectMake(0.0f, 0.0f, frameSize.width, frameSize.height);
+    [shapeLayer setBounds:shapeRect];
+    [shapeLayer setPosition:CGPointMake( frameSize.width/2,frameSize.height/2)];
+    
+    [shapeLayer setFillColor:[[UIColor clearColor] CGColor]];
+    [shapeLayer setStrokeColor:color];
+    [shapeLayer setLineWidth:2.0f];
+    [shapeLayer setLineJoin:kCALineJoinRound];
+    [shapeLayer setLineDashPattern:
+     [NSArray arrayWithObjects:[NSNumber numberWithInt:10],
+      [NSNumber numberWithInt:5],
+      nil]];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:shapeRect cornerRadius:5.0];
+    [shapeLayer setPath:path.CGPath];
+    
+    return shapeLayer;
+}
 /*
 #pragma mark - Navigation
 
@@ -204,16 +233,18 @@
 - (IBAction)maktItForMeButonAction:(id)sender {
     
     
-    if (self.salad) {
+    FM_Salad *salad = [[FM_SaladManager sharedManager] salad];
     
-        [self.salad performValidationOnSalad:^(NSString *errorMessage) {
+    if (salad) {
+    
+        [salad performValidationOnSalad:^(NSString *errorMessage) {
             
             if(errorMessage) {
             
                 [self showAlertWithMessage:errorMessage];
             } else {
             
-                FM_Log(@"SaladPrice:%d",(int)self.salad.price);
+                FM_Log(@"SaladPrice:%d",(int)salad.price);
             }
         }];
     }

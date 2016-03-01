@@ -11,4 +11,19 @@
 
 @interface HomeViewController : FM_BaseViewController
 
+//DeliveryToME Button
+@property (weak, nonatomic) IBOutlet UIButton *delivertToMe;
+
+//Basket Button
+@property (weak, nonatomic) IBOutlet UIButton *basket;
+
+//Price
+@property (weak, nonatomic) IBOutlet UILabel *priceLBL;
+
+//Deltvertome Button Action
+- (IBAction)deliveryToMeAction:(UIButton *)sender;
+
+//Basket Button Action
+- (IBAction)basketBTNAction:(id)sender;
+
 @end

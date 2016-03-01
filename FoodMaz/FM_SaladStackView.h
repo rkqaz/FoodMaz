@@ -15,6 +15,8 @@
 
 - (void)selectedStackItem:(FM_SaladStack *)stack;
 - (void)deSelectedStackItem:(FM_SaladStack *)stack;
+- (void)errorMessageInPickingSaladStack:(NSString *)errorMessage;
+
 
 @end
 

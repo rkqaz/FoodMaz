@@ -33,13 +33,13 @@
 @property (nonatomic,assign)NSInteger price;
 // Validate SaladStack
 
-- (void)validatateSaladStack:(nonnull FM_SaladStack *)stackItem result:(nullable void (^)(BOOL success, NSString * errorMessage))resultBlock;
+- (void)validatateSaladStack:(nonnull FM_SaladStack *)stackItem result:(nullable void (^)(BOOL success, NSString  * _Nonnull errorMessage))resultBlock;
 
 //Delete Stackitem
 - (void)deleteStackItem:(nonnull FM_SaladStack *)stackItem;
 
 //validation on Salad
-- (void)performValidationOnSalad:(nullable void(^)(NSString *errorMessage))result;
+- (void)performValidationOnSalad:(nullable void(^)(NSString * _Nullable errorMessage))result;
 
 
 @end

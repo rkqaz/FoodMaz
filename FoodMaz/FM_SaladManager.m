@@ -80,6 +80,21 @@
 
 }
 
+
+- (NSInteger)price
+{
+    
+   __block NSInteger totalPrice = 0;
+
+    [self.saladData enumerateObjectsUsingBlock:^(FM_Salad *  _Nonnull salad, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        totalPrice += salad.price;
+        
+    }];
+    
+    return totalPrice;
+}
+
 - (void)addSalad:(FM_Salad *)salad
 {
 

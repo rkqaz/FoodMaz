@@ -45,12 +45,23 @@
 		B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69C1C79815A0023FEF1 /* Foundation.framework */; };
 		B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69E1C7981690023FEF1 /* libsqlite3.tbd */; };
 		B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6A01C7981720023FEF1 /* libz.tbd */; };
-		B8B4A81A1C84142200A92A3A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B4A8191C84142200A92A3A /* Parse.framework */; };
 		B8B4A81D1C84295800A92A3A /* FM_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */; };
 		B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B01C7AD53D003DB59D /* Bolts.framework */; };
 		B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */; };
 		B8C949B81C7B32EC003DB59D /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C949B71C7B32EC003DB59D /* SignupViewController.m */; };
 		B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */; };
+		B8E798381C85606C00259465 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E798371C85606C00259465 /* Parse.framework */; };
+		B8E798481C85843000259465 /* foodbasket.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983B1C85843000259465 /* foodbasket.png */; };
+		B8E798491C85843000259465 /* saladbowl.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983C1C85843000259465 /* saladbowl.png */; };
+		B8E7984A1C85843000259465 /* spoonandfork.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983D1C85843000259465 /* spoonandfork.png */; };
+		B8E7984B1C85843000259465 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983E1C85843000259465 /* truck.png */; };
+		B8E7984C1C85843000259465 /* halloumi.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798401C85843000259465 /* halloumi.png */; };
+		B8E7984D1C85843000259465 /* primavera.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798411C85843000259465 /* primavera.png */; };
+		B8E7984E1C85843000259465 /* tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798421C85843000259465 /* tomato.png */; };
+		B8E7984F1C85843000259465 /* wilted.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798431C85843000259465 /* wilted.png */; };
+		B8E798501C85843000259465 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798451C85843000259465 /* house.png */; };
+		B8E798511C85843000259465 /* orderhistory.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798461C85843000259465 /* orderhistory.png */; };
+		B8E798521C85843000259465 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798471C85843000259465 /* profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,7 +121,6 @@
 		B892B69C1C79815A0023FEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B892B69E1C7981690023FEF1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B892B6A01C7981720023FEF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		B8B4A8191C84142200A92A3A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B8B4A81B1C84295800A92A3A /* FM_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_BaseViewController.h; sourceTree = "<group>"; };
 		B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_BaseViewController.m; sourceTree = "<group>"; };
 		B8C949B01C7AD53D003DB59D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -119,6 +129,18 @@
 		B8C949B71C7B32EC003DB59D /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		B8C949B91C7B3909003DB59D /* FoodMaz-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodMaz-Prefix.pch"; sourceTree = "<group>"; };
 		B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		B8E798371C85606C00259465 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B8E7983B1C85843000259465 /* foodbasket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodbasket.png; sourceTree = "<group>"; };
+		B8E7983C1C85843000259465 /* saladbowl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saladbowl.png; sourceTree = "<group>"; };
+		B8E7983D1C85843000259465 /* spoonandfork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spoonandfork.png; sourceTree = "<group>"; };
+		B8E7983E1C85843000259465 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truck.png; sourceTree = "<group>"; };
+		B8E798401C85843000259465 /* halloumi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halloumi.png; sourceTree = "<group>"; };
+		B8E798411C85843000259465 /* primavera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = primavera.png; sourceTree = "<group>"; };
+		B8E798421C85843000259465 /* tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomato.png; sourceTree = "<group>"; };
+		B8E798431C85843000259465 /* wilted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wilted.png; sourceTree = "<group>"; };
+		B8E798451C85843000259465 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		B8E798461C85843000259465 /* orderhistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orderhistory.png; sourceTree = "<group>"; };
+		B8E798471C85843000259465 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +154,7 @@
 				B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */,
 				B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */,
 				B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */,
-				B8B4A81A1C84142200A92A3A /* Parse.framework in Frameworks */,
+				B8E798381C85606C00259465 /* Parse.framework in Frameworks */,
 				B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */,
 				B892B69B1C7981520023FEF1 /* CoreGraphics.framework in Frameworks */,
 				B892B6991C79814A0023FEF1 /* CFNetwork.framework in Frameworks */,
@@ -182,6 +204,7 @@
 		B84A907B1C705FC500D214F1 /* FoodMaz */ = {
 			isa = PBXGroup;
 			children = (
+				B8E798391C85843000259465 /* Images */,
 				B84A907F1C705FC500D214F1 /* AppDelegate.h */,
 				B84A90801C705FC500D214F1 /* AppDelegate.m */,
 				B84A90821C705FC500D214F1 /* ViewController.h */,
@@ -263,7 +286,7 @@
 		B892B6A31C7981B80023FEF1 /* Parse Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B8B4A8191C84142200A92A3A /* Parse.framework */,
+				B8E798371C85606C00259465 /* Parse.framework */,
 				B85360F11C82DCA600CD0276 /* ParseUI.framework */,
 				B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */,
 				B8C949B01C7AD53D003DB59D /* Bolts.framework */,
@@ -273,6 +296,48 @@
 			);
 			name = "Parse Framework";
 			path = "FoodMaz/Parse Framework";
+			sourceTree = "<group>";
+		};
+		B8E798391C85843000259465 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7983A1C85843000259465 /* Chooseyoursalad */,
+				B8E7983F1C85843000259465 /* salads */,
+				B8E798441C85843000259465 /* settings */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B8E7983A1C85843000259465 /* Chooseyoursalad */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7983B1C85843000259465 /* foodbasket.png */,
+				B8E7983C1C85843000259465 /* saladbowl.png */,
+				B8E7983D1C85843000259465 /* spoonandfork.png */,
+				B8E7983E1C85843000259465 /* truck.png */,
+			);
+			path = Chooseyoursalad;
+			sourceTree = "<group>";
+		};
+		B8E7983F1C85843000259465 /* salads */ = {
+			isa = PBXGroup;
+			children = (
+				B8E798401C85843000259465 /* halloumi.png */,
+				B8E798411C85843000259465 /* primavera.png */,
+				B8E798421C85843000259465 /* tomato.png */,
+				B8E798431C85843000259465 /* wilted.png */,
+			);
+			path = salads;
+			sourceTree = "<group>";
+		};
+		B8E798441C85843000259465 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				B8E798451C85843000259465 /* house.png */,
+				B8E798461C85843000259465 /* orderhistory.png */,
+				B8E798471C85843000259465 /* profile.png */,
+			);
+			path = settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +399,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84A908C1C705FC500D214F1 /* LaunchScreen.storyboard in Resources */,
+				B8E7984D1C85843000259465 /* primavera.png in Resources */,
 				B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */,
+				B8E7984C1C85843000259465 /* halloumi.png in Resources */,
+				B8E798501C85843000259465 /* house.png in Resources */,
+				B8E7984E1C85843000259465 /* tomato.png in Resources */,
+				B8E798481C85843000259465 /* foodbasket.png in Resources */,
+				B8E7984F1C85843000259465 /* wilted.png in Resources */,
+				B8E7984A1C85843000259465 /* spoonandfork.png in Resources */,
+				B8E798491C85843000259465 /* saladbowl.png in Resources */,
+				B8E7984B1C85843000259465 /* truck.png in Resources */,
+				B8E798511C85843000259465 /* orderhistory.png in Resources */,
 				B84A90871C705FC500D214F1 /* Main.storyboard in Resources */,
+				B8E798521C85843000259465 /* profile.png in Resources */,
 				B85360E31C82D0A600CD0276 /* SaladTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +570,8 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
@@ -515,6 +593,8 @@
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/OtherFramework",
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",

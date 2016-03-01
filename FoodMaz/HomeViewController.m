@@ -21,24 +21,38 @@
     // Do any additional setup after loading the view.
     
     
-    PFQuery *query = [PFQuery queryWithClassName:@"SaladStacks"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded. The first 100 objects are available in objects
-            FM_Log(@"Objects:%@",objects);
-//            
-//            PFQueryCollectionViewController *controller = [[PFQueryCollectionViewController alloc] initWithClassName:@"SaladStacks"];
-//            UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)controller.collectionViewLayout;
-//            flowLayout.itemSize = CGSizeMake(100.0f, 100.0f);
-//            [self presentViewController:controller animated:YES completion:nil];
-//
-        } else {
-            // Log details of the failure
-            FM_Log(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
+    self.delivertToMe.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    // you probably want to center it
+    self.delivertToMe.titleLabel.textAlignment = NSTextAlignmentCenter; // if you want to
+    [self.delivertToMe setTitle: @"DELIVER\nTO ME" forState: UIControlStateNormal];
     
+    
+    
+    
+    [self _settotalPrice];
 
+
+}
+
+- (void)_settotalPrice
+{
+
+    NSString *priceStr = [NSString stringWithFormat:@"TOTAL\n%i\nAED",[FM_SaladManager sharedManager].saladData.count == 0 ? (int)0 :(int)[[FM_SaladManager sharedManager] price]];
+    
+    NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:priceStr];
+    
+    [attributedStr addAttribute:NSFontAttributeName value:[FM_Font labelFontWithSize:25] range:NSMakeRange(0,[attributedStr string].length)];
+    [attributedStr addAttribute:NSForegroundColorAttributeName value:[FM_Color greenColor] range:NSMakeRange(0,[attributedStr string].length)];
+    
+    [attributedStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:[[attributedStr string] rangeOfString:@"TOTAL"]];
+    
+    [attributedStr addAttribute:NSFontAttributeName value:[FM_Font regularFontWithSize:14.0f] range:[[attributedStr string] rangeOfString:@"TOTAL"]];
+    [attributedStr addAttribute:NSFontAttributeName value:[FM_Font regularFontWithSize:14.0f] range:[[attributedStr string] rangeOfString:@"AED"]];
+    
+    [attributedStr addAttribute:NSForegroundColorAttributeName value:[FM_Color greenColor] range:[[attributedStr string] rangeOfString:@"AED"]];
+    
+    
+    self.priceLBL.attributedText = attributedStr;
 
 }
 
@@ -57,4 +71,11 @@
 }
 */
 
+- (IBAction)deleveryToMe:(id)sender {
+}
+- (IBAction)deliveryToMeAction:(UIButton *)sender {
+}
+
+- (IBAction)basketBTNAction:(id)sender {
+}
 @end

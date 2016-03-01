@@ -13,7 +13,10 @@
 @interface MakeMySaladViewController : FM_BaseViewController<UITableViewDataSource,UITableViewDelegate,FM_ScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *saladstackTable;
+@property (weak, nonatomic) IBOutlet UITextView *healthTipTextView;
+
+@property (weak, nonatomic) IBOutlet UIView *healthTipView;
 
 - (IBAction)maktItForMeButonAction:(id)sender;
-@property (nonatomic,strong)FM_Salad *salad;
+
 @end
