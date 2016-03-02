@@ -31,6 +31,14 @@
 
 //Salad Price
 @property (nonatomic,assign)NSInteger price;
+
+//Salad Name
+
+@property (null_resettable,nonatomic,strong)NSString *name;
+
+//SaladImage
+
+@property(nullable,nonatomic,strong)PFFile *imageFile;
 // Validate SaladStack
 
 - (void)validatateSaladStack:(nonnull FM_SaladStack *)stackItem result:(nullable void (^)(BOOL success, NSString  * _Nonnull errorMessage))resultBlock;

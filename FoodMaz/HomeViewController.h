@@ -26,4 +26,7 @@
 //Basket Button Action
 - (IBAction)basketBTNAction:(id)sender;
 
+//Display Salads
+@property (weak, nonatomic) IBOutlet UICollectionView *saladCollectionView;
+
 @end

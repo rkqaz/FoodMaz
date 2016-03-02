@@ -31,6 +31,6 @@
 + (UIColor *)greenColor
 {
     
-    return [self colorFromHexString:@"#84C71C"];
+    return [self colorFromHexString:@"#93cd22"];
 }
 @end

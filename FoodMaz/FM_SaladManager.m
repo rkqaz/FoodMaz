@@ -19,6 +19,19 @@
     return sharedMyManager;
 }
 
+- (instancetype)init
+{
+
+    self = [super init];
+    
+    if (self) {
+    
+        self.saladData = [[NSMutableArray alloc] init];
+        
+    }
+    
+    return self;
+}
 
 - (void)checkValidationforSaladBed
 {

@@ -14,6 +14,8 @@
 
 #import "FM_SaladManager.h"
 
+#import "ConfirmSalad.h"
+
 
 #import "SaladTableViewCell.h"
 
@@ -244,6 +246,15 @@
                 [self showAlertWithMessage:errorMessage];
             } else {
             
+                float width = 320;
+                
+                float height = 300;
+                
+                ConfirmSalad *confirmSalad = [[ConfirmSalad alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.view.frame) - width)/2, (CGRectGetHeight(self.view.frame) - height)/2, width, height)];
+                
+                [self.view addSubview:confirmSalad];
+                
+                [self.view bringSubviewToFront:confirmSalad];
                 FM_Log(@"SaladPrice:%d",(int)salad.price);
             }
         }];

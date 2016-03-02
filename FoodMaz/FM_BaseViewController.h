@@ -12,4 +12,6 @@
 
 - (void)showAlertWithMessage:(NSString *)message;
 
+- (CAShapeLayer *) addDashedBorderWithColor: (CGColorRef) color forFrame:(CGRect) objFrame;
+
 @end

@@ -136,12 +136,13 @@
             
             FM_Salad *salad = [[FM_Salad alloc] init];
             
+            salad.customised = YES;
             [salad validatateSaladStack:stackView.saladStack result:^(BOOL success, NSString * _Nonnull errorMessage) {
                 
                 if (success){
                 
                     [[FM_SaladManager sharedManager] setSalad:salad];
-
+                
                     //delgate can reponds to selector
                     if ( (self.FM_SaladViewDelegate) &&[self.FM_SaladViewDelegate respondsToSelector:@selector(selectedStackItem:)]) {
                         

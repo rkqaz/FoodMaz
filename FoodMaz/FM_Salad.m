@@ -19,7 +19,7 @@
 @implementation FM_Salad
 
 
-@synthesize bed,ingredients,dressing,customised;
+@synthesize bed,ingredients,dressing,customised,name;
 
 
 +(void)load

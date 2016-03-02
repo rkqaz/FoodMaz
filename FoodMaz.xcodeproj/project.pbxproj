@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		366E808C1C8618E200CD7A0E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		B8177B1A1C86FEB200681DD3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
+		B8177B1D1C871C9300681DD3 /* ConfirmSalad.m in Sources */ = {isa = PBXBuildFile; fileRef = B8177B1C1C871C9300681DD3 /* ConfirmSalad.m */; };
+		B8177B1F1C871F9C00681DD3 /* ConfirmSalad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8177B1E1C871F9C00681DD3 /* ConfirmSalad.xib */; };
 		B81ED0A71C79908900A53A96 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */; };
 		B81ED0A91C79923D00A53A96 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */; };
 		B81ED0AF1C79A3D700A53A96 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = B81ED0AE1C79A3D700A53A96 /* Comms.m */; };
@@ -66,6 +68,9 @@
 
 /* Begin PBXFileReference section */
 		366E808B1C8618E200CD7A0E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B8177B1B1C871C9300681DD3 /* ConfirmSalad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSalad.h; sourceTree = "<group>"; };
+		B8177B1C1C871C9300681DD3 /* ConfirmSalad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSalad.m; sourceTree = "<group>"; };
+		B8177B1E1C871F9C00681DD3 /* ConfirmSalad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmSalad.xib; sourceTree = "<group>"; };
 		B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B81ED0AD1C79A3D700A53A96 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
@@ -148,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				366E808C1C8618E200CD7A0E /* Parse.framework in Frameworks */,
+				B8177B1A1C86FEB200681DD3 /* Parse.framework in Frameworks */,
 				B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */,
 				B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */,
 				B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */,
@@ -219,6 +224,9 @@
 				B85360D31C82BA9200CD0276 /* MakeMySaladViewController.m */,
 				B85360DF1C82D0A600CD0276 /* SaladTableViewCell.h */,
 				B85360E01C82D0A600CD0276 /* SaladTableViewCell.m */,
+				B8177B1B1C871C9300681DD3 /* ConfirmSalad.h */,
+				B8177B1C1C871C9300681DD3 /* ConfirmSalad.m */,
+				B8177B1E1C871F9C00681DD3 /* ConfirmSalad.xib */,
 				B85360E11C82D0A600CD0276 /* SaladTableViewCell.xib */,
 				B85360D51C82BAAB00CD0276 /* OrderSaladViewController.h */,
 				B85360D61C82BAAB00CD0276 /* OrderSaladViewController.m */,
@@ -402,6 +410,7 @@
 				B8E7984D1C85843000259465 /* primavera.png in Resources */,
 				B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */,
 				B8E7984C1C85843000259465 /* halloumi.png in Resources */,
+				B8177B1F1C871F9C00681DD3 /* ConfirmSalad.xib in Resources */,
 				B8E798501C85843000259465 /* house.png in Resources */,
 				B8E7984E1C85843000259465 /* tomato.png in Resources */,
 				B8E798481C85843000259465 /* foodbasket.png in Resources */,
@@ -425,6 +434,7 @@
 			files = (
 				B84A90841C705FC500D214F1 /* ViewController.m in Sources */,
 				B81ED0AF1C79A3D700A53A96 /* Comms.m in Sources */,
+				B8177B1D1C871C9300681DD3 /* ConfirmSalad.m in Sources */,
 				B85360E91C82DA0500CD0276 /* FM_SaladStackView.m in Sources */,
 				B85360EC1C82DA1E00CD0276 /* FM_SaladStack.m in Sources */,
 				B85360F61C83103B00CD0276 /* FM_Color.m in Sources */,
@@ -576,6 +586,10 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
@@ -597,6 +611,10 @@
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/OtherFramework",
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
