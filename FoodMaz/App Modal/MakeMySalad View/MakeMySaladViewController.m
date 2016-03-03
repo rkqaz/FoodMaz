@@ -127,6 +127,9 @@
     //assaign delegate to self
     cell.saladStackScrollView.FM_ScrollDelegate = self;
     
+    //cellselectionstyle to NONE
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     
     return cell;
 }

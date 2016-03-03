@@ -8,8 +8,12 @@
 
 #import "OrderViewController.h"
 
+
+#define kCellIdentifier @"OrderCellIdentifier"
+
 @interface OrderViewController ()
 
+@property (nonatomic,retain)NSArray *data;
 @end
 
 @implementation OrderViewController
@@ -23,6 +27,11 @@
  
     [self.totalPriceView.layer addSublayer:[self addDashedBorderWithColor:[FM_Color greenColor].CGColor forFrame:self.totalPriceView.frame]];
 
+    [self.navigationItem setTitle:@"ORDER INSTRUCTIONS"];
+    
+    
+    self.data = [NSArray array];
+
 }
 
 
@@ -31,13 +40,20 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 0;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    return nil;
+    UITableViewCell * cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    
+    //cellselectionstyle to NONE
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+
+    
+    return cell;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
