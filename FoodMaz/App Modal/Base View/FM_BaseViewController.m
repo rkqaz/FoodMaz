@@ -16,6 +16,14 @@
     //Notification to show alert
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAlertWithMessage:) name:kSHOWALERT_NOTIFICATION object:nil];
     
+    [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
+    
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
+    [UINavigationBar appearance].barTintColor = [FM_Color greenColor];
+    
+    [[UINavigationBar appearance] setTintColor:[FM_Color greenColor]];
+
     [super viewWillAppear:animated];
 }
 
@@ -54,11 +62,28 @@
     
     //Step 4: Present the alert to the user
     [self presentViewController:myAlertController animated:YES completion:nil];
+    
+    
+    
 }
 
 
 
+- (void)viewDidLoad
+{
 
+    [super viewDidLoad];
+    
+   // self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"foodmazlogo.png"]];
+    
+    [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
+    
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
+    [UINavigationBar appearance].barTintColor = [FM_Color greenColor];
+
+    [[UINavigationBar appearance] setTintColor:[FM_Color greenColor]];
+}
 /*
  * Add Dash border
  */

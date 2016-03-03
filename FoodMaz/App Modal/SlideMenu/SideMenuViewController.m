@@ -1,18 +1,18 @@
 //
-//  FM_ViewController.m
+//  SideMenuViewController.m
 //  FoodMaz
 //
-//  Created by Ravi Kiran on 2/28/16.
+//  Created by Ravi Kiran on 3/3/16.
 //  Copyright © 2016 Ravi Kiran. All rights reserved.
 //
 
-#import "FM_ViewController.h"
+#import "SideMenuViewController.h"
 
-@interface FM_ViewController ()
+@interface SideMenuViewController ()
 
 @end
 
-@implementation FM_ViewController
+@implementation SideMenuViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

@@ -31,7 +31,6 @@
     
     // ****************************************************************************
     // Parse initialization
-  //  [ParseCrashReporting enable];
     [Parse setApplicationId:@"0HTeXpHgo34qsgxydAF82LMiwa8Gqd9nZ0YZRxab" clientKey:@"3nbfZj1kKJGT87omY8hSlAJgeKImAVhp3vj8kmoz"];
     [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
     // ****************************************************************************
@@ -59,7 +58,7 @@
 
     if ([PFUser currentUser]) {
     
-        UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+        UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];//RevealView
         
         [self.window setRootViewController:rootViewController];
         
@@ -112,28 +111,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (PFLogInViewController *)getLoginViewController
-{
-    PFLogInViewController *loginController= [[PFLogInViewController alloc] init];
-    [loginController setDelegate:self];
-    loginController.logInView.logo = nil;
-    
-    loginController.fields = PFLogInFieldsUsernameAndPassword
-    | PFLogInFieldsLogInButton
-    | PFLogInFieldsSignUpButton
-    | PFLogInFieldsPasswordForgotten;
-    
-    PFSignUpViewController * signUpViewController= [[PFSignUpViewController alloc] init];
-    [signUpViewController setDelegate:self];
-    
-    signUpViewController.fields = PFSignUpFieldsUsernameAndPassword
-    | PFSignUpFieldsSignUpButton|PFSignUpFieldsDismissButton;
-    
-    signUpViewController.signUpView.logo = nil;
-    [loginController setSignUpController:signUpViewController];
-    return loginController;
 }
 
 @end

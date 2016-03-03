@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SWRevealViewController.h"
+
 
 @interface HomeViewController : FM_BaseViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -28,5 +30,6 @@
 
 //Display Salads
 @property (weak, nonatomic) IBOutlet UICollectionView *saladCollectionView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 
 @end

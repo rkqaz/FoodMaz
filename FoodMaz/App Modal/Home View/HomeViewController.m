@@ -28,7 +28,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+//    
+//    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+//    self.menuButton .target = self.revealViewController;
+//        self.menuButton.action = @selector(revealToggle:);
+//    
+//    // Set the gesture
+//    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+//    
+
+    [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
+
     self.delivertToMe.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     // you probably want to center it
     self.delivertToMe.titleLabel.textAlignment = NSTextAlignmentCenter; // if you want to
@@ -293,6 +303,9 @@
 - (IBAction)deleveryToMe:(id)sender {
 }
 - (IBAction)deliveryToMeAction:(UIButton *)sender {
+    
+    
+    [self performSegueWithIdentifier:@"push_DeliverToMe" sender:self];
 }
 
 - (IBAction)basketBTNAction:(id)sender {

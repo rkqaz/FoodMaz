@@ -14,7 +14,7 @@
 
 #import "FM_SaladManager.h"
 
-#import "ConfirmSalad.h"
+#import "FM_PopUP.h"
 
 
 #import "SaladTableViewCell.h"
@@ -42,7 +42,20 @@
     [self.healthTipView.layer addSublayer:[self addDashedBorderWithColor:[FM_Color greenColor].CGColor]];
     
     
-    self.saladstackTable.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0);
+    //self.saladstackTable.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    
+    [self.navigationItem setTitle:@"CREATE YOUR OWN SALAD"];
+
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back.png"] style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction)];
+    
+    self.navigationItem.leftBarButtonItem = leftBtn;
+    
+    
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"x.png"] style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction)];
+    
+    self.navigationItem.rightBarButtonItem = rightBtn;
+
+    
     
 }
 
@@ -232,9 +245,28 @@
 }
 */
 
+#pragma mark - Button Actions
+
+- (void)backButtonAction
+{
+ 
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
 - (IBAction)maktItForMeButonAction:(id)sender {
     
+    CGRect _frame = [UIApplication sharedApplication].keyWindow.frame;
     
+    _frame.origin.y = 0.0f;
+    
+   // _frame.size.height += 64.0f;
+    
+
+    FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
+    
+    [self.view addSubview:popUp];
+
+    return;
     FM_Salad *salad = [[FM_SaladManager sharedManager] salad];
     
     if (salad) {
@@ -246,18 +278,15 @@
                 [self showAlertWithMessage:errorMessage];
             } else {
             
-                float width = 320;
+                FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
                 
-                float height = 300;
+                [[[UIApplication sharedApplication] keyWindow] addSubview:popUp];
                 
-                ConfirmSalad *confirmSalad = [[ConfirmSalad alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.view.frame) - width)/2, (CGRectGetHeight(self.view.frame) - height)/2, width, height)];
-                
-                [self.view addSubview:confirmSalad];
-                
-                [self.view bringSubviewToFront:confirmSalad];
-                FM_Log(@"SaladPrice:%d",(int)salad.price);
-            }
+               }
         }];
+    } else {
+    
+        [self showAlertWithMessage:@"Please select Ingredients"];
     }
 }
 @end

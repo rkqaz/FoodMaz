@@ -9,12 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface ConfirmSalad : UIView
-- (IBAction)cancelBTNAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *saladName;
-- (IBAction)quantityIncrementBTNAction:(id)sender;
-- (IBAction)quantityDecrementBTNAction:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UILabel *quanity;
 @property (weak, nonatomic) IBOutlet UILabel *saladPrice;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *decrementButton;
+@property (weak, nonatomic) IBOutlet UIButton *incrementButton;
+
+- (IBAction)cancelBTNAction:(id)sender;
+
+- (IBAction)quantityIncrementBTNAction:(id)sender;
+
+- (IBAction)quantityDecrementBTNAction:(id)sender;
+
 - (IBAction)addToBasketButtonAction:(id)sender;
 @end

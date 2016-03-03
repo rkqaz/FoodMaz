@@ -7,32 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8177B1A1C86FEB200681DD3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
-		B8177B1D1C871C9300681DD3 /* ConfirmSalad.m in Sources */ = {isa = PBXBuildFile; fileRef = B8177B1C1C871C9300681DD3 /* ConfirmSalad.m */; };
-		B8177B1F1C871F9C00681DD3 /* ConfirmSalad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8177B1E1C871F9C00681DD3 /* ConfirmSalad.xib */; };
 		B81ED0A71C79908900A53A96 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */; };
 		B81ED0A91C79923D00A53A96 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */; };
 		B81ED0AF1C79A3D700A53A96 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = B81ED0AE1C79A3D700A53A96 /* Comms.m */; };
 		B84A907E1C705FC500D214F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B84A907D1C705FC500D214F1 /* main.m */; };
-		B84A90811C705FC500D214F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84A90801C705FC500D214F1 /* AppDelegate.m */; };
-		B84A90841C705FC500D214F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84A90831C705FC500D214F1 /* ViewController.m */; };
 		B84A90871C705FC500D214F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84A90851C705FC500D214F1 /* Main.storyboard */; };
 		B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84A90881C705FC500D214F1 /* Assets.xcassets */; };
 		B84A908C1C705FC500D214F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84A908A1C705FC500D214F1 /* LaunchScreen.storyboard */; };
-		B85360D11C82BA7B00CD0276 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360D01C82BA7B00CD0276 /* HomeViewController.m */; };
-		B85360D41C82BA9200CD0276 /* MakeMySaladViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360D31C82BA9200CD0276 /* MakeMySaladViewController.m */; };
-		B85360D71C82BAAB00CD0276 /* OrderSaladViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360D61C82BAAB00CD0276 /* OrderSaladViewController.m */; };
-		B85360DE1C82C88F00CD0276 /* FM_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360DD1C82C88F00CD0276 /* FM_ViewController.m */; };
-		B85360E21C82D0A600CD0276 /* SaladTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360E01C82D0A600CD0276 /* SaladTableViewCell.m */; };
-		B85360E31C82D0A600CD0276 /* SaladTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85360E11C82D0A600CD0276 /* SaladTableViewCell.xib */; };
-		B85360E61C82D60D00CD0276 /* FM_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360E51C82D60C00CD0276 /* FM_ScrollView.m */; };
-		B85360E91C82DA0500CD0276 /* FM_SaladStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360E81C82DA0500CD0276 /* FM_SaladStackView.m */; };
-		B85360EC1C82DA1E00CD0276 /* FM_SaladStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360EB1C82DA1E00CD0276 /* FM_SaladStack.m */; };
-		B85360EF1C82DA3300CD0276 /* FM_Salad.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360EE1C82DA3300CD0276 /* FM_Salad.m */; };
 		B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85360F11C82DCA600CD0276 /* ParseUI.framework */; };
-		B85360F61C83103B00CD0276 /* FM_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360F51C83103B00CD0276 /* FM_Color.m */; };
-		B85360F91C83104D00CD0276 /* FM_Font.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360F81C83104D00CD0276 /* FM_Font.m */; };
-		B85360FE1C83334300CD0276 /* FM_SaladManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B85360FD1C83334300CD0276 /* FM_SaladManager.m */; };
+		B86BAFF91C88095D001CB94A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFCA1C88095D001CB94A /* AppDelegate.m */; };
+		B86BAFFA1C88095D001CB94A /* FM_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFCD1C88095D001CB94A /* FM_BaseViewController.m */; };
+		B86BAFFB1C88095D001CB94A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFD01C88095D001CB94A /* HomeViewController.m */; };
+		B86BAFFC1C88095D001CB94A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFD31C88095D001CB94A /* ViewController.m */; };
+		B86BAFFD1C88095D001CB94A /* MakeMySaladViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFD61C88095D001CB94A /* MakeMySaladViewController.m */; };
+		B86BAFFE1C88095D001CB94A /* ConfirmSalad.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFD91C88095D001CB94A /* ConfirmSalad.m */; };
+		B86BAFFF1C88095D001CB94A /* ConfirmSalad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86BAFDA1C88095D001CB94A /* ConfirmSalad.xib */; };
+		B86BB0001C88095D001CB94A /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFDD1C88095D001CB94A /* OrderViewController.m */; };
+		B86BB0011C88095D001CB94A /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFE01C88095D001CB94A /* SignupViewController.m */; };
+		B86BB0021C88095D001CB94A /* FM_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFE41C88095D001CB94A /* FM_Color.m */; };
+		B86BB0031C88095D001CB94A /* FM_Font.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFE61C88095D001CB94A /* FM_Font.m */; };
+		B86BB0041C88095D001CB94A /* FM_Salad.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFE91C88095D001CB94A /* FM_Salad.m */; };
+		B86BB0051C88095D001CB94A /* FM_SaladManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFEB1C88095D001CB94A /* FM_SaladManager.m */; };
+		B86BB0061C88095D001CB94A /* FM_SaladStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFED1C88095D001CB94A /* FM_SaladStack.m */; };
+		B86BB0071C88095D001CB94A /* FM_SaladStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFF11C88095D001CB94A /* FM_SaladStackView.m */; };
+		B86BB0081C88095D001CB94A /* SaladTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFF41C88095D001CB94A /* SaladTableViewCell.m */; };
+		B86BB0091C88095D001CB94A /* SaladTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86BAFF51C88095D001CB94A /* SaladTableViewCell.xib */; };
+		B86BB00A1C88095D001CB94A /* FM_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFF81C88095D001CB94A /* FM_ScrollView.m */; };
+		B86BB00E1C881672001CB94A /* FM_PopUP.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BB00D1C881672001CB94A /* FM_PopUP.m */; };
+		B86BB0171C882678001CB94A /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BB0141C882678001CB94A /* SideMenuViewController.m */; };
+		B86BB0181C882678001CB94A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BB0161C882678001CB94A /* SWRevealViewController.m */; };
+		B86BB01B1C882A05001CB94A /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB0191C882A05001CB94A /* menu.png */; };
+		B86BB01C1C882A05001CB94A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01A1C882A05001CB94A /* menu@2x.png */; };
+		B86BB01E1C884769001CB94A /* foodmazlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01D1C884769001CB94A /* foodmazlogo.png */; };
+		B86BB0211C884D77001CB94A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01F1C884D77001CB94A /* back.png */; };
+		B86BB0221C884D77001CB94A /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB0201C884D77001CB94A /* x.png */; };
 		B892B6851C7980D00023FEF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6841C7980D00023FEF1 /* QuartzCore.framework */; };
 		B892B6871C7980D70023FEF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6861C7980D70023FEF1 /* Security.framework */; };
 		B892B6891C7980E00023FEF1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6881C7980E00023FEF1 /* Social.framework */; };
@@ -48,10 +56,8 @@
 		B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69C1C79815A0023FEF1 /* Foundation.framework */; };
 		B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69E1C7981690023FEF1 /* libsqlite3.tbd */; };
 		B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6A01C7981720023FEF1 /* libz.tbd */; };
-		B8B4A81D1C84295800A92A3A /* FM_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */; };
 		B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B01C7AD53D003DB59D /* Bolts.framework */; };
 		B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */; };
-		B8C949B81C7B32EC003DB59D /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C949B71C7B32EC003DB59D /* SignupViewController.m */; };
 		B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */; };
 		B8E798481C85843000259465 /* foodbasket.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983B1C85843000259465 /* foodbasket.png */; };
 		B8E798491C85843000259465 /* saladbowl.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983C1C85843000259465 /* saladbowl.png */; };
@@ -64,54 +70,68 @@
 		B8E798501C85843000259465 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798451C85843000259465 /* house.png */; };
 		B8E798511C85843000259465 /* orderhistory.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798461C85843000259465 /* orderhistory.png */; };
 		B8E798521C85843000259465 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798471C85843000259465 /* profile.png */; };
+		B8FD73061C88607D00424D72 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		366E808B1C8618E200CD7A0E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		B8177B1B1C871C9300681DD3 /* ConfirmSalad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSalad.h; sourceTree = "<group>"; };
-		B8177B1C1C871C9300681DD3 /* ConfirmSalad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSalad.m; sourceTree = "<group>"; };
-		B8177B1E1C871F9C00681DD3 /* ConfirmSalad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmSalad.xib; sourceTree = "<group>"; };
 		B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B81ED0AD1C79A3D700A53A96 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
 		B81ED0AE1C79A3D700A53A96 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
 		B84A90791C705FC500D214F1 /* FoodMaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84A907D1C705FC500D214F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B84A907F1C705FC500D214F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B84A90801C705FC500D214F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B84A90821C705FC500D214F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B84A90831C705FC500D214F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B84A90861C705FC500D214F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B84A90881C705FC500D214F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84A908B1C705FC500D214F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84A908D1C705FC500D214F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B85360CF1C82BA7B00CD0276 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		B85360D01C82BA7B00CD0276 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		B85360D21C82BA9200CD0276 /* MakeMySaladViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeMySaladViewController.h; sourceTree = "<group>"; };
-		B85360D31C82BA9200CD0276 /* MakeMySaladViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeMySaladViewController.m; sourceTree = "<group>"; };
-		B85360D51C82BAAB00CD0276 /* OrderSaladViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderSaladViewController.h; sourceTree = "<group>"; };
-		B85360D61C82BAAB00CD0276 /* OrderSaladViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderSaladViewController.m; sourceTree = "<group>"; };
-		B85360DC1C82C88F00CD0276 /* FM_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_ViewController.h; sourceTree = "<group>"; };
-		B85360DD1C82C88F00CD0276 /* FM_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_ViewController.m; sourceTree = "<group>"; };
-		B85360DF1C82D0A600CD0276 /* SaladTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaladTableViewCell.h; sourceTree = "<group>"; };
-		B85360E01C82D0A600CD0276 /* SaladTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaladTableViewCell.m; sourceTree = "<group>"; };
-		B85360E11C82D0A600CD0276 /* SaladTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaladTableViewCell.xib; sourceTree = "<group>"; };
-		B85360E41C82D60C00CD0276 /* FM_ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_ScrollView.h; sourceTree = "<group>"; };
-		B85360E51C82D60C00CD0276 /* FM_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_ScrollView.m; sourceTree = "<group>"; };
-		B85360E71C82DA0500CD0276 /* FM_SaladStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladStackView.h; sourceTree = "<group>"; };
-		B85360E81C82DA0500CD0276 /* FM_SaladStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladStackView.m; sourceTree = "<group>"; };
-		B85360EA1C82DA1E00CD0276 /* FM_SaladStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladStack.h; sourceTree = "<group>"; };
-		B85360EB1C82DA1E00CD0276 /* FM_SaladStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladStack.m; sourceTree = "<group>"; };
-		B85360ED1C82DA3300CD0276 /* FM_Salad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Salad.h; sourceTree = "<group>"; };
-		B85360EE1C82DA3300CD0276 /* FM_Salad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Salad.m; sourceTree = "<group>"; };
 		B85360F11C82DCA600CD0276 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		B85360F41C83103B00CD0276 /* FM_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Color.h; sourceTree = "<group>"; };
-		B85360F51C83103B00CD0276 /* FM_Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Color.m; sourceTree = "<group>"; };
-		B85360F71C83104D00CD0276 /* FM_Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Font.h; sourceTree = "<group>"; };
-		B85360F81C83104D00CD0276 /* FM_Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Font.m; sourceTree = "<group>"; };
-		B85360FC1C83334300CD0276 /* FM_SaladManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladManager.h; sourceTree = "<group>"; };
-		B85360FD1C83334300CD0276 /* FM_SaladManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladManager.m; sourceTree = "<group>"; };
 		B85360FF1C8333AE00CD0276 /* FM_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Constants.h; sourceTree = "<group>"; };
+		B86BAFC91C88095D001CB94A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B86BAFCA1C88095D001CB94A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B86BAFCC1C88095D001CB94A /* FM_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_BaseViewController.h; sourceTree = "<group>"; };
+		B86BAFCD1C88095D001CB94A /* FM_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_BaseViewController.m; sourceTree = "<group>"; };
+		B86BAFCF1C88095D001CB94A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B86BAFD01C88095D001CB94A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B86BAFD21C88095D001CB94A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B86BAFD31C88095D001CB94A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B86BAFD51C88095D001CB94A /* MakeMySaladViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeMySaladViewController.h; sourceTree = "<group>"; };
+		B86BAFD61C88095D001CB94A /* MakeMySaladViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeMySaladViewController.m; sourceTree = "<group>"; };
+		B86BAFD81C88095D001CB94A /* ConfirmSalad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSalad.h; sourceTree = "<group>"; };
+		B86BAFD91C88095D001CB94A /* ConfirmSalad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSalad.m; sourceTree = "<group>"; };
+		B86BAFDA1C88095D001CB94A /* ConfirmSalad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmSalad.xib; sourceTree = "<group>"; };
+		B86BAFDC1C88095D001CB94A /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		B86BAFDD1C88095D001CB94A /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		B86BAFDF1C88095D001CB94A /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		B86BAFE01C88095D001CB94A /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		B86BAFE31C88095D001CB94A /* FM_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Color.h; sourceTree = "<group>"; };
+		B86BAFE41C88095D001CB94A /* FM_Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Color.m; sourceTree = "<group>"; };
+		B86BAFE51C88095D001CB94A /* FM_Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Font.h; sourceTree = "<group>"; };
+		B86BAFE61C88095D001CB94A /* FM_Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Font.m; sourceTree = "<group>"; };
+		B86BAFE81C88095D001CB94A /* FM_Salad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_Salad.h; sourceTree = "<group>"; };
+		B86BAFE91C88095D001CB94A /* FM_Salad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_Salad.m; sourceTree = "<group>"; };
+		B86BAFEA1C88095D001CB94A /* FM_SaladManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladManager.h; sourceTree = "<group>"; };
+		B86BAFEB1C88095D001CB94A /* FM_SaladManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladManager.m; sourceTree = "<group>"; };
+		B86BAFEC1C88095D001CB94A /* FM_SaladStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladStack.h; sourceTree = "<group>"; };
+		B86BAFED1C88095D001CB94A /* FM_SaladStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladStack.m; sourceTree = "<group>"; };
+		B86BAFF01C88095D001CB94A /* FM_SaladStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_SaladStackView.h; sourceTree = "<group>"; };
+		B86BAFF11C88095D001CB94A /* FM_SaladStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_SaladStackView.m; sourceTree = "<group>"; };
+		B86BAFF31C88095D001CB94A /* SaladTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaladTableViewCell.h; sourceTree = "<group>"; };
+		B86BAFF41C88095D001CB94A /* SaladTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaladTableViewCell.m; sourceTree = "<group>"; };
+		B86BAFF51C88095D001CB94A /* SaladTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaladTableViewCell.xib; sourceTree = "<group>"; };
+		B86BAFF71C88095D001CB94A /* FM_ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_ScrollView.h; sourceTree = "<group>"; };
+		B86BAFF81C88095D001CB94A /* FM_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_ScrollView.m; sourceTree = "<group>"; };
+		B86BB00C1C881672001CB94A /* FM_PopUP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FM_PopUP.h; path = POPUP/FM_PopUP.h; sourceTree = "<group>"; };
+		B86BB00D1C881672001CB94A /* FM_PopUP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FM_PopUP.m; path = POPUP/FM_PopUP.m; sourceTree = "<group>"; };
+		B86BB0131C882678001CB94A /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		B86BB0141C882678001CB94A /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		B86BB0151C882678001CB94A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B86BB0161C882678001CB94A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B86BB0191C882A05001CB94A /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		B86BB01A1C882A05001CB94A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		B86BB01D1C884769001CB94A /* foodmazlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodmazlogo.png; sourceTree = "<group>"; };
+		B86BB01F1C884D77001CB94A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		B86BB0201C884D77001CB94A /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 		B892B6841C7980D00023FEF1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B892B6861C7980D70023FEF1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B892B6881C7980E00023FEF1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -127,12 +147,8 @@
 		B892B69C1C79815A0023FEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B892B69E1C7981690023FEF1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B892B6A01C7981720023FEF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		B8B4A81B1C84295800A92A3A /* FM_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FM_BaseViewController.h; sourceTree = "<group>"; };
-		B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_BaseViewController.m; sourceTree = "<group>"; };
 		B8C949B01C7AD53D003DB59D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		B8C949B61C7B32EC003DB59D /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
-		B8C949B71C7B32EC003DB59D /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		B8C949B91C7B3909003DB59D /* FoodMaz-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodMaz-Prefix.pch"; sourceTree = "<group>"; };
 		B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		B8E7983B1C85843000259465 /* foodbasket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodbasket.png; sourceTree = "<group>"; };
@@ -153,7 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8177B1A1C86FEB200681DD3 /* Parse.framework in Frameworks */,
+				B8FD73061C88607D00424D72 /* Parse.framework in Frameworks */,
 				B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */,
 				B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */,
 				B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */,
@@ -209,27 +225,11 @@
 		B84A907B1C705FC500D214F1 /* FoodMaz */ = {
 			isa = PBXGroup;
 			children = (
+				B86BAFC81C88095D001CB94A /* App Modal */,
+				B86BAFE11C88095D001CB94A /* Base Elements */,
+				B86BAFE71C88095D001CB94A /* Modal */,
+				B86BAFEE1C88095D001CB94A /* View Components */,
 				B8E798391C85843000259465 /* Images */,
-				B84A907F1C705FC500D214F1 /* AppDelegate.h */,
-				B84A90801C705FC500D214F1 /* AppDelegate.m */,
-				B84A90821C705FC500D214F1 /* ViewController.h */,
-				B84A90831C705FC500D214F1 /* ViewController.m */,
-				B8C949B61C7B32EC003DB59D /* SignupViewController.h */,
-				B8C949B71C7B32EC003DB59D /* SignupViewController.m */,
-				B85360CF1C82BA7B00CD0276 /* HomeViewController.h */,
-				B85360D01C82BA7B00CD0276 /* HomeViewController.m */,
-				B85360DC1C82C88F00CD0276 /* FM_ViewController.h */,
-				B85360DD1C82C88F00CD0276 /* FM_ViewController.m */,
-				B85360D21C82BA9200CD0276 /* MakeMySaladViewController.h */,
-				B85360D31C82BA9200CD0276 /* MakeMySaladViewController.m */,
-				B85360DF1C82D0A600CD0276 /* SaladTableViewCell.h */,
-				B85360E01C82D0A600CD0276 /* SaladTableViewCell.m */,
-				B8177B1B1C871C9300681DD3 /* ConfirmSalad.h */,
-				B8177B1C1C871C9300681DD3 /* ConfirmSalad.m */,
-				B8177B1E1C871F9C00681DD3 /* ConfirmSalad.xib */,
-				B85360E11C82D0A600CD0276 /* SaladTableViewCell.xib */,
-				B85360D51C82BAAB00CD0276 /* OrderSaladViewController.h */,
-				B85360D61C82BAAB00CD0276 /* OrderSaladViewController.m */,
 				B81ED0AC1C79A3D700A53A96 /* Utilities */,
 				B84A90851C705FC500D214F1 /* Main.storyboard */,
 				B84A90881C705FC500D214F1 /* Assets.xcassets */,
@@ -237,20 +237,6 @@
 				B84A908D1C705FC500D214F1 /* Info.plist */,
 				B892B6A21C79817D0023FEF1 /* Frameworks */,
 				B84A907C1C705FC500D214F1 /* Supporting Files */,
-				B85360E41C82D60C00CD0276 /* FM_ScrollView.h */,
-				B85360E51C82D60C00CD0276 /* FM_ScrollView.m */,
-				B85360F41C83103B00CD0276 /* FM_Color.h */,
-				B85360F51C83103B00CD0276 /* FM_Color.m */,
-				B85360F71C83104D00CD0276 /* FM_Font.h */,
-				B85360F81C83104D00CD0276 /* FM_Font.m */,
-				B85360EA1C82DA1E00CD0276 /* FM_SaladStack.h */,
-				B85360EB1C82DA1E00CD0276 /* FM_SaladStack.m */,
-				B85360ED1C82DA3300CD0276 /* FM_Salad.h */,
-				B85360EE1C82DA3300CD0276 /* FM_Salad.m */,
-				B85360E71C82DA0500CD0276 /* FM_SaladStackView.h */,
-				B85360E81C82DA0500CD0276 /* FM_SaladStackView.m */,
-				B8B4A81B1C84295800A92A3A /* FM_BaseViewController.h */,
-				B8B4A81C1C84295800A92A3A /* FM_BaseViewController.m */,
 			);
 			path = FoodMaz;
 			sourceTree = "<group>";
@@ -261,10 +247,172 @@
 				B8C949B91C7B3909003DB59D /* FoodMaz-Prefix.pch */,
 				B85360FF1C8333AE00CD0276 /* FM_Constants.h */,
 				B84A907D1C705FC500D214F1 /* main.m */,
-				B85360FC1C83334300CD0276 /* FM_SaladManager.h */,
-				B85360FD1C83334300CD0276 /* FM_SaladManager.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B86BAFC81C88095D001CB94A /* App Modal */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFC91C88095D001CB94A /* AppDelegate.h */,
+				B86BAFCA1C88095D001CB94A /* AppDelegate.m */,
+				B86BB0121C882678001CB94A /* SlideMenu */,
+				B86BAFCB1C88095D001CB94A /* Base View */,
+				B86BAFCE1C88095D001CB94A /* Home View */,
+				B86BAFD11C88095D001CB94A /* Login View */,
+				B86BAFD41C88095D001CB94A /* MakeMySalad View */,
+				B86BAFDB1C88095D001CB94A /* OrderSalad View */,
+				B86BAFDE1C88095D001CB94A /* SignUp View */,
+			);
+			path = "App Modal";
+			sourceTree = "<group>";
+		};
+		B86BAFCB1C88095D001CB94A /* Base View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFCC1C88095D001CB94A /* FM_BaseViewController.h */,
+				B86BAFCD1C88095D001CB94A /* FM_BaseViewController.m */,
+			);
+			path = "Base View";
+			sourceTree = "<group>";
+		};
+		B86BAFCE1C88095D001CB94A /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFCF1C88095D001CB94A /* HomeViewController.h */,
+				B86BAFD01C88095D001CB94A /* HomeViewController.m */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		B86BAFD11C88095D001CB94A /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFD21C88095D001CB94A /* ViewController.h */,
+				B86BAFD31C88095D001CB94A /* ViewController.m */,
+			);
+			path = "Login View";
+			sourceTree = "<group>";
+		};
+		B86BAFD41C88095D001CB94A /* MakeMySalad View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFD51C88095D001CB94A /* MakeMySaladViewController.h */,
+				B86BAFD61C88095D001CB94A /* MakeMySaladViewController.m */,
+				B86BAFD71C88095D001CB94A /* View */,
+			);
+			path = "MakeMySalad View";
+			sourceTree = "<group>";
+		};
+		B86BAFD71C88095D001CB94A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFD81C88095D001CB94A /* ConfirmSalad.h */,
+				B86BAFD91C88095D001CB94A /* ConfirmSalad.m */,
+				B86BAFDA1C88095D001CB94A /* ConfirmSalad.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B86BAFDB1C88095D001CB94A /* OrderSalad View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFDC1C88095D001CB94A /* OrderViewController.h */,
+				B86BAFDD1C88095D001CB94A /* OrderViewController.m */,
+			);
+			path = "OrderSalad View";
+			sourceTree = "<group>";
+		};
+		B86BAFDE1C88095D001CB94A /* SignUp View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFDF1C88095D001CB94A /* SignupViewController.h */,
+				B86BAFE01C88095D001CB94A /* SignupViewController.m */,
+			);
+			path = "SignUp View";
+			sourceTree = "<group>";
+		};
+		B86BAFE11C88095D001CB94A /* Base Elements */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFE21C88095D001CB94A /* Theme */,
+			);
+			path = "Base Elements";
+			sourceTree = "<group>";
+		};
+		B86BAFE21C88095D001CB94A /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFE31C88095D001CB94A /* FM_Color.h */,
+				B86BAFE41C88095D001CB94A /* FM_Color.m */,
+				B86BAFE51C88095D001CB94A /* FM_Font.h */,
+				B86BAFE61C88095D001CB94A /* FM_Font.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B86BAFE71C88095D001CB94A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFE81C88095D001CB94A /* FM_Salad.h */,
+				B86BAFE91C88095D001CB94A /* FM_Salad.m */,
+				B86BAFEA1C88095D001CB94A /* FM_SaladManager.h */,
+				B86BAFEB1C88095D001CB94A /* FM_SaladManager.m */,
+				B86BAFEC1C88095D001CB94A /* FM_SaladStack.h */,
+				B86BAFED1C88095D001CB94A /* FM_SaladStack.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		B86BAFEE1C88095D001CB94A /* View Components */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFEF1C88095D001CB94A /* Salad Satck View */,
+				B86BAFF21C88095D001CB94A /* Salad TableView Cell */,
+				B86BAFF61C88095D001CB94A /* ScrollView */,
+				B86BB00C1C881672001CB94A /* FM_PopUP.h */,
+				B86BB00D1C881672001CB94A /* FM_PopUP.m */,
+			);
+			path = "View Components";
+			sourceTree = "<group>";
+		};
+		B86BAFEF1C88095D001CB94A /* Salad Satck View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFF01C88095D001CB94A /* FM_SaladStackView.h */,
+				B86BAFF11C88095D001CB94A /* FM_SaladStackView.m */,
+			);
+			path = "Salad Satck View";
+			sourceTree = "<group>";
+		};
+		B86BAFF21C88095D001CB94A /* Salad TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFF31C88095D001CB94A /* SaladTableViewCell.h */,
+				B86BAFF41C88095D001CB94A /* SaladTableViewCell.m */,
+				B86BAFF51C88095D001CB94A /* SaladTableViewCell.xib */,
+			);
+			path = "Salad TableView Cell";
+			sourceTree = "<group>";
+		};
+		B86BAFF61C88095D001CB94A /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B86BAFF71C88095D001CB94A /* FM_ScrollView.h */,
+				B86BAFF81C88095D001CB94A /* FM_ScrollView.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		B86BB0121C882678001CB94A /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B86BB0131C882678001CB94A /* SideMenuViewController.h */,
+				B86BB0141C882678001CB94A /* SideMenuViewController.m */,
+				B86BB0151C882678001CB94A /* SWRevealViewController.h */,
+				B86BB0161C882678001CB94A /* SWRevealViewController.m */,
+			);
+			path = SlideMenu;
 			sourceTree = "<group>";
 		};
 		B892B6A21C79817D0023FEF1 /* Frameworks */ = {
@@ -309,6 +457,11 @@
 		B8E798391C85843000259465 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B86BB0191C882A05001CB94A /* menu.png */,
+				B86BB01F1C884D77001CB94A /* back.png */,
+				B86BB0201C884D77001CB94A /* x.png */,
+				B86BB01D1C884769001CB94A /* foodmazlogo.png */,
+				B86BB01A1C882A05001CB94A /* menu@2x.png */,
 				B8E7983A1C85843000259465 /* Chooseyoursalad */,
 				B8E7983F1C85843000259465 /* salads */,
 				B8E798441C85843000259465 /* settings */,
@@ -408,20 +561,25 @@
 			files = (
 				B84A908C1C705FC500D214F1 /* LaunchScreen.storyboard in Resources */,
 				B8E7984D1C85843000259465 /* primavera.png in Resources */,
+				B86BB01B1C882A05001CB94A /* menu.png in Resources */,
 				B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */,
 				B8E7984C1C85843000259465 /* halloumi.png in Resources */,
-				B8177B1F1C871F9C00681DD3 /* ConfirmSalad.xib in Resources */,
+				B86BB01E1C884769001CB94A /* foodmazlogo.png in Resources */,
+				B86BAFFF1C88095D001CB94A /* ConfirmSalad.xib in Resources */,
 				B8E798501C85843000259465 /* house.png in Resources */,
 				B8E7984E1C85843000259465 /* tomato.png in Resources */,
+				B86BB0221C884D77001CB94A /* x.png in Resources */,
 				B8E798481C85843000259465 /* foodbasket.png in Resources */,
 				B8E7984F1C85843000259465 /* wilted.png in Resources */,
 				B8E7984A1C85843000259465 /* spoonandfork.png in Resources */,
 				B8E798491C85843000259465 /* saladbowl.png in Resources */,
 				B8E7984B1C85843000259465 /* truck.png in Resources */,
+				B86BB01C1C882A05001CB94A /* menu@2x.png in Resources */,
 				B8E798511C85843000259465 /* orderhistory.png in Resources */,
+				B86BB0211C884D77001CB94A /* back.png in Resources */,
 				B84A90871C705FC500D214F1 /* Main.storyboard in Resources */,
 				B8E798521C85843000259465 /* profile.png in Resources */,
-				B85360E31C82D0A600CD0276 /* SaladTableViewCell.xib in Resources */,
+				B86BB0091C88095D001CB94A /* SaladTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,25 +590,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84A90841C705FC500D214F1 /* ViewController.m in Sources */,
+				B86BB0171C882678001CB94A /* SideMenuViewController.m in Sources */,
+				B86BB0021C88095D001CB94A /* FM_Color.m in Sources */,
+				B86BAFFC1C88095D001CB94A /* ViewController.m in Sources */,
+				B86BB0061C88095D001CB94A /* FM_SaladStack.m in Sources */,
+				B86BB00E1C881672001CB94A /* FM_PopUP.m in Sources */,
 				B81ED0AF1C79A3D700A53A96 /* Comms.m in Sources */,
-				B8177B1D1C871C9300681DD3 /* ConfirmSalad.m in Sources */,
-				B85360E91C82DA0500CD0276 /* FM_SaladStackView.m in Sources */,
-				B85360EC1C82DA1E00CD0276 /* FM_SaladStack.m in Sources */,
-				B85360F61C83103B00CD0276 /* FM_Color.m in Sources */,
-				B84A90811C705FC500D214F1 /* AppDelegate.m in Sources */,
-				B85360DE1C82C88F00CD0276 /* FM_ViewController.m in Sources */,
+				B86BB0041C88095D001CB94A /* FM_Salad.m in Sources */,
 				B84A907E1C705FC500D214F1 /* main.m in Sources */,
-				B8B4A81D1C84295800A92A3A /* FM_BaseViewController.m in Sources */,
-				B85360E61C82D60D00CD0276 /* FM_ScrollView.m in Sources */,
-				B8C949B81C7B32EC003DB59D /* SignupViewController.m in Sources */,
-				B85360D71C82BAAB00CD0276 /* OrderSaladViewController.m in Sources */,
-				B85360EF1C82DA3300CD0276 /* FM_Salad.m in Sources */,
-				B85360FE1C83334300CD0276 /* FM_SaladManager.m in Sources */,
-				B85360E21C82D0A600CD0276 /* SaladTableViewCell.m in Sources */,
-				B85360F91C83104D00CD0276 /* FM_Font.m in Sources */,
-				B85360D11C82BA7B00CD0276 /* HomeViewController.m in Sources */,
-				B85360D41C82BA9200CD0276 /* MakeMySaladViewController.m in Sources */,
+				B86BB0071C88095D001CB94A /* FM_SaladStackView.m in Sources */,
+				B86BAFFA1C88095D001CB94A /* FM_BaseViewController.m in Sources */,
+				B86BB0031C88095D001CB94A /* FM_Font.m in Sources */,
+				B86BB0011C88095D001CB94A /* SignupViewController.m in Sources */,
+				B86BB00A1C88095D001CB94A /* FM_ScrollView.m in Sources */,
+				B86BAFFE1C88095D001CB94A /* ConfirmSalad.m in Sources */,
+				B86BB0181C882678001CB94A /* SWRevealViewController.m in Sources */,
+				B86BAFFB1C88095D001CB94A /* HomeViewController.m in Sources */,
+				B86BAFF91C88095D001CB94A /* AppDelegate.m in Sources */,
+				B86BB0001C88095D001CB94A /* OrderViewController.m in Sources */,
+				B86BB0051C88095D001CB94A /* FM_SaladManager.m in Sources */,
+				B86BAFFD1C88095D001CB94A /* MakeMySaladViewController.m in Sources */,
+				B86BB0081C88095D001CB94A /* SaladTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +750,12 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
@@ -611,6 +777,12 @@
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/OtherFramework",
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",

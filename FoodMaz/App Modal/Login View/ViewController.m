@@ -178,7 +178,7 @@
             // Now add the data to the UI elements
             // ...
             
-            
+            //RevealView push_Home
             [self performSegueWithIdentifier:@"push_Home" sender:self];
         }
     }];

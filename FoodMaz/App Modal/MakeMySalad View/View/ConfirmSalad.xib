@@ -31,11 +31,22 @@
                     <state key="normal" title="X">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="cancelBTNAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="eRw-tS-Pg5"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  TYPE HERE" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-fQ-0nW">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  TYPE HERE" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-fQ-0nW">
                     <rect key="frame" x="8" y="65" width="304" height="45"/>
                     <color key="backgroundColor" red="0.85490196078431369" green="0.8666666666666667" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -95,8 +106,10 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="34" id="OQb-nl-uHu"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="+"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="quantityIncrementBTNAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="icr-37-3h7"/>
                     </connections>
@@ -106,13 +119,15 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="34" id="ls2-ZT-cZP"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="46"/>
-                    <state key="normal" title="-"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="quantityDecrementBTNAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tS6-ge-IsC"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="333" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIh-Jd-TZ3">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIh-Jd-TZ3">
                     <rect key="frame" x="57" y="131" width="42" height="33"/>
                     <color key="backgroundColor" red="0.85490196080000003" green="0.86666666670000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -153,11 +168,14 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="cancelButton" destination="ALS-lC-zGV" id="Y0N-MQ-AKH"/>
+                <outlet property="decrementButton" destination="ezZ-gO-g2d" id="bGc-ks-UUA"/>
+                <outlet property="incrementButton" destination="h2e-Ua-IK6" id="cMh-jW-239"/>
                 <outlet property="quanity" destination="KIh-Jd-TZ3" id="ymN-tH-UY2"/>
                 <outlet property="saladName" destination="7i5-fQ-0nW" id="qIq-ht-JCn"/>
                 <outlet property="saladPrice" destination="2ku-n4-esW" id="kC5-qS-5e0"/>
             </connections>
-            <point key="canvasLocation" x="562" y="91"/>
+            <point key="canvasLocation" x="201" y="-68"/>
         </view>
     </objects>
 </document>

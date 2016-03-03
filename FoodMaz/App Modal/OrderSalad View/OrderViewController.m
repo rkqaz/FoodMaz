@@ -6,19 +6,39 @@
 //  Copyright © 2016 Ravi Kiran. All rights reserved.
 //
 
-#import "OrderSaladViewController.h"
+#import "OrderViewController.h"
 
-@interface OrderSaladViewController ()
+@interface OrderViewController ()
 
 @end
 
-@implementation OrderSaladViewController
+@implementation OrderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+
+    [self.orderSummary.layer addSublayer:[self addDashedBorderWithColor:[FM_Color greenColor].CGColor forFrame:self.orderSummary.frame]];
+ 
+    [self.totalPriceView.layer addSublayer:[self addDashedBorderWithColor:[FM_Color greenColor].CGColor forFrame:self.totalPriceView.frame]];
+
 }
 
+
+#pragma mark - UITableview Datasource Methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    return nil;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -34,4 +54,6 @@
 }
 */
 
+- (IBAction)delivertoMeAction:(UIButton *)sender {
+}
 @end
