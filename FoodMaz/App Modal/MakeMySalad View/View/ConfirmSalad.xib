@@ -3,8 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -54,6 +52,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="mLh-ru-anf"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-7Q-WuE">
                     <rect key="frame" x="0.0" y="250" width="320" height="50"/>
@@ -65,14 +66,11 @@
                     <state key="normal" title="ADD TO MY FOOD BASKET">
                         <color key="titleColor" red="0.47450980392156861" green="0.70980392156862748" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                    <connections>
-                        <action selector="addToBasketButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4DC-BA-3A7"/>
-                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLl-20-zr9" userLabel="Price View">
                     <rect key="frame" x="8" y="185" width="304" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-5p-COc">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TOTAL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-5p-COc">
                             <rect key="frame" x="12" y="18" width="65" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="65" id="0s1-oc-c0X"/>
@@ -81,24 +79,17 @@
                             <color key="textColor" red="0.34901960784313724" green="0.70980392156862748" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="58 AED" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ku-n4-esW">
-                            <rect key="frame" x="205" y="19" width="88" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="88" id="WL8-Vo-bUa"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                            <color key="textColor" red="0.97647058823529409" green="0.62745098039215685" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" AED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-bf-ogd">
+                            <rect key="frame" x="237" y="18" width="60" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                            <color key="textColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="2ku-n4-esW" firstAttribute="top" secondItem="mLl-20-zr9" secondAttribute="top" constant="19" id="4JX-US-r33"/>
-                        <constraint firstItem="xpi-5p-COc" firstAttribute="baseline" secondItem="2ku-n4-esW" secondAttribute="firstBaseline" id="65n-tt-FpM"/>
                         <constraint firstItem="xpi-5p-COc" firstAttribute="leading" secondItem="mLl-20-zr9" secondAttribute="leading" constant="12" id="FkS-iD-UNx"/>
                         <constraint firstItem="xpi-5p-COc" firstAttribute="top" secondItem="mLl-20-zr9" secondAttribute="top" constant="18" id="QaG-B0-WRl"/>
-                        <constraint firstAttribute="trailing" secondItem="2ku-n4-esW" secondAttribute="trailing" constant="11" id="od4-pJ-JUh"/>
-                        <constraint firstAttribute="bottom" secondItem="2ku-n4-esW" secondAttribute="bottom" constant="10" id="xWR-jm-Nyi"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2e-Ua-IK6">
@@ -127,7 +118,7 @@
                         <action selector="quantityDecrementBTNAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tS6-ge-IsC"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIh-Jd-TZ3">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIh-Jd-TZ3">
                     <rect key="frame" x="57" y="131" width="42" height="33"/>
                     <color key="backgroundColor" red="0.85490196080000003" green="0.86666666670000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -168,14 +159,15 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="addToBasket" destination="Uss-7Q-WuE" id="ToC-Gb-slz"/>
                 <outlet property="cancelButton" destination="ALS-lC-zGV" id="Y0N-MQ-AKH"/>
                 <outlet property="decrementButton" destination="ezZ-gO-g2d" id="bGc-ks-UUA"/>
                 <outlet property="incrementButton" destination="h2e-Ua-IK6" id="cMh-jW-239"/>
+                <outlet property="price" destination="MhM-bf-ogd" id="ocj-F4-UOS"/>
                 <outlet property="quanity" destination="KIh-Jd-TZ3" id="ymN-tH-UY2"/>
                 <outlet property="saladName" destination="7i5-fQ-0nW" id="qIq-ht-JCn"/>
-                <outlet property="saladPrice" destination="2ku-n4-esW" id="kC5-qS-5e0"/>
             </connections>
-            <point key="canvasLocation" x="201" y="-68"/>
+            <point key="canvasLocation" x="20" y="-109"/>
         </view>
     </objects>
 </document>

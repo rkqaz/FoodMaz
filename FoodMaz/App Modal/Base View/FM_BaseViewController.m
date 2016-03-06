@@ -74,13 +74,10 @@
 
     [super viewDidLoad];
     
-   // self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"foodmazlogo.png"]];
+    
+    
     
     [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
-    
-    [self.navigationController.navigationBar setTranslucent:NO];
-    
-    [UINavigationBar appearance].barTintColor = [FM_Color greenColor];
 
     [[UINavigationBar appearance] setTintColor:[FM_Color greenColor]];
 }

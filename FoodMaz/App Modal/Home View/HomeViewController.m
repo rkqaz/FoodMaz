@@ -37,7 +37,14 @@
 //    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 //    
 
+    
+
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_Bar.png"]];
+
+    
     [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
+    
+    [[UINavigationBar appearance] setTintColor:[FM_Color greenColor]];
 
     self.delivertToMe.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     // you probably want to center it
@@ -63,7 +70,13 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
 
+    [super viewWillAppear:animated];
+    
+    [self updateBasket];
+}
 - (void)_loadSaladData
 {
 
@@ -255,7 +268,7 @@
     if(CGRectContainsPoint(targetRect, self.selectedSaladImage.center)) {
     
         
-        [self showAlertWithMessage:@"SUccess"];
+        [self showAlertWithMessage:@"Success"];
         
         self.selectedSaladImage.hidden = YES;
 
@@ -267,7 +280,6 @@
         
     } else {
     
-        FM_Log(@"DelivertToMe Frame:%@",NSStringFromCGRect(targetRect));
         
         FM_Log(@"Frame:%@",NSStringFromCGRect(self.selectedSaladImage.frame));
 

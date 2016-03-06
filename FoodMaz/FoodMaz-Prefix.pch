@@ -41,4 +41,10 @@
 //View Controllers
 #import "FM_BaseViewController.h"
 
+
+//SLIDE MENU
+
+#import "SWRevealViewController.h"
+
+
 #endif /* FoodMaz_Prefix_pch */

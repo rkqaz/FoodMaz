@@ -11,13 +11,13 @@
 @interface FM_Salad : NSObject
 
 //Bed
-@property(null_resettable,nonatomic,strong)FM_SaladStack *bed;
+@property(nullable,nonatomic,strong)FM_SaladStack *bed;
 
 //Ingredients
-@property(nonnull,nonatomic,strong)NSMutableArray *ingredients;
+@property(nullable,nonatomic,strong)NSMutableArray *ingredients;
 
 //Dressing
-@property(null_resettable,nonatomic,strong)FM_SaladStack *dressing;
+@property(nullable,nonatomic,strong)FM_SaladStack *dressing;
 
 //Customised
 @property(nonatomic,assign)BOOL customised;
@@ -33,12 +33,16 @@
 @property (nonatomic,assign)NSInteger price;
 
 //Salad Name
-
 @property (null_resettable,nonatomic,strong)NSString *name;
 
+//Quantity
+
+@property (null_resettable,nonatomic,strong)NSNumber* quantity;
 //SaladImage
 
 @property(nullable,nonatomic,strong)PFFile *imageFile;
+
+
 // Validate SaladStack
 
 - (void)validatateSaladStack:(nonnull FM_SaladStack *)stackItem result:(nullable void (^)(BOOL success, NSString  * _Nonnull errorMessage))resultBlock;

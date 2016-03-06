@@ -54,20 +54,27 @@
     
     self.backgroundColor = [UIColor lightGrayColor];
     
-    float width = 320;
     
-    float height = 300;
 
-    ConfirmSalad *confirmSalad = [ [ [ NSBundle mainBundle ] loadNibNamed:@"ConfirmSalad" owner:self options:nil ] firstObject ];
+        float width = 320;
+        
+        float height = 300;
+
+        ConfirmSalad *confirmSalad = [ [ [ NSBundle mainBundle ] loadNibNamed:@"ConfirmSalad" owner:self options:nil ] firstObject ];
+        
+        [confirmSalad setFrame:CGRectMake((CGRectGetWidth(self.frame) - width)/2, (CGRectGetHeight(self.frame) - height)/2 - 30, width, height)];
+        
+        
+        [confirmSalad.cancelButton addTarget:self action:@selector(cancelButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        [confirmSalad.addToBasket addTarget:self action:@selector(addtoBasketButtonAction) forControlEvents:UIControlEventTouchUpInside];
+
+        
+        [self addSubview:confirmSalad];
+        
     
-    [confirmSalad setFrame:CGRectMake((CGRectGetWidth(self.frame) - width)/2, (CGRectGetHeight(self.frame) - height)/2, width, height)];
     
-    
-    [confirmSalad.cancelButton addTarget:self action:@selector(cancelButtonAction) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self addSubview:confirmSalad];
-    
-    //[self bringSubviewToFront:confirmSalad];
 
 }
 
@@ -78,5 +85,15 @@
 
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self removeFromSuperview ];
+}
+
+- (void)addtoBasketButtonAction
+{
+    
+    [[[FM_SaladManager sharedManager] saladData] addObject:[FM_SaladManager sharedManager].salad];
+    
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self removeFromSuperview ];
+
 }
 @end

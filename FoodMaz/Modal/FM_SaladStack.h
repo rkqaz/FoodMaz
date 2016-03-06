@@ -12,4 +12,5 @@
 
 @property (nonatomic,strong)NSString *itemType; //<-- check type Bed,Ingredient,Dressing ........
 
+
 @end

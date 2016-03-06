@@ -34,8 +34,6 @@
 		B86BB0091C88095D001CB94A /* SaladTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86BAFF51C88095D001CB94A /* SaladTableViewCell.xib */; };
 		B86BB00A1C88095D001CB94A /* FM_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BAFF81C88095D001CB94A /* FM_ScrollView.m */; };
 		B86BB00E1C881672001CB94A /* FM_PopUP.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BB00D1C881672001CB94A /* FM_PopUP.m */; };
-		B86BB0171C882678001CB94A /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BB0141C882678001CB94A /* SideMenuViewController.m */; };
-		B86BB0181C882678001CB94A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BB0161C882678001CB94A /* SWRevealViewController.m */; };
 		B86BB01B1C882A05001CB94A /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB0191C882A05001CB94A /* menu.png */; };
 		B86BB01C1C882A05001CB94A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01A1C882A05001CB94A /* menu@2x.png */; };
 		B86BB01E1C884769001CB94A /* foodmazlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01D1C884769001CB94A /* foodmazlogo.png */; };
@@ -56,6 +54,12 @@
 		B892B69D1C79815A0023FEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69C1C79815A0023FEF1 /* Foundation.framework */; };
 		B892B69F1C7981690023FEF1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B69E1C7981690023FEF1 /* libsqlite3.tbd */; };
 		B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6A01C7981720023FEF1 /* libz.tbd */; };
+		B89CFE1F1C8BF89200BDF3F2 /* nav_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B89CFE1D1C8BF89200BDF3F2 /* nav_Bar.png */; };
+		B89CFE201C8BF89200BDF3F2 /* nav_Bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89CFE1E1C8BF89200BDF3F2 /* nav_Bar@2x.png */; };
+		B89CFE211C8C03E500BDF3F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
+		B89CFE241C8C047500BDF3F2 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CFE231C8C047500BDF3F2 /* SideMenuViewController.m */; };
+		B89CFE271C8C08F200BDF3F2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CFE261C8C08F200BDF3F2 /* SWRevealViewController.m */; };
+		B89CFE2A1C8C406000BDF3F2 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CFE291C8C406000BDF3F2 /* OrderTableViewCell.m */; };
 		B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B01C7AD53D003DB59D /* Bolts.framework */; };
 		B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */; };
 		B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */; };
@@ -70,7 +74,6 @@
 		B8E798501C85843000259465 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798451C85843000259465 /* house.png */; };
 		B8E798511C85843000259465 /* orderhistory.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798461C85843000259465 /* orderhistory.png */; };
 		B8E798521C85843000259465 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E798471C85843000259465 /* profile.png */; };
-		B8FD73061C88607D00424D72 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,10 +126,6 @@
 		B86BAFF81C88095D001CB94A /* FM_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FM_ScrollView.m; sourceTree = "<group>"; };
 		B86BB00C1C881672001CB94A /* FM_PopUP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FM_PopUP.h; path = POPUP/FM_PopUP.h; sourceTree = "<group>"; };
 		B86BB00D1C881672001CB94A /* FM_PopUP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FM_PopUP.m; path = POPUP/FM_PopUP.m; sourceTree = "<group>"; };
-		B86BB0131C882678001CB94A /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
-		B86BB0141C882678001CB94A /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
-		B86BB0151C882678001CB94A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		B86BB0161C882678001CB94A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B86BB0191C882A05001CB94A /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		B86BB01A1C882A05001CB94A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		B86BB01D1C884769001CB94A /* foodmazlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodmazlogo.png; sourceTree = "<group>"; };
@@ -147,6 +146,14 @@
 		B892B69C1C79815A0023FEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B892B69E1C7981690023FEF1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B892B6A01C7981720023FEF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B89CFE1D1C8BF89200BDF3F2 /* nav_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_Bar.png; sourceTree = "<group>"; };
+		B89CFE1E1C8BF89200BDF3F2 /* nav_Bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_Bar@2x.png"; sourceTree = "<group>"; };
+		B89CFE221C8C047500BDF3F2 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		B89CFE231C8C047500BDF3F2 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		B89CFE251C8C08F200BDF3F2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B89CFE261C8C08F200BDF3F2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B89CFE281C8C406000BDF3F2 /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderTableViewCell.h; path = View/OrderTableViewCell.h; sourceTree = "<group>"; };
+		B89CFE291C8C406000BDF3F2 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderTableViewCell.m; path = View/OrderTableViewCell.m; sourceTree = "<group>"; };
 		B8C949B01C7AD53D003DB59D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B8C949B91C7B3909003DB59D /* FoodMaz-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodMaz-Prefix.pch"; sourceTree = "<group>"; };
@@ -169,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8FD73061C88607D00424D72 /* Parse.framework in Frameworks */,
+				B89CFE211C8C03E500BDF3F2 /* Parse.framework in Frameworks */,
 				B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */,
 				B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */,
 				B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */,
@@ -319,6 +326,8 @@
 			children = (
 				B86BAFDC1C88095D001CB94A /* OrderViewController.h */,
 				B86BAFDD1C88095D001CB94A /* OrderViewController.m */,
+				B89CFE281C8C406000BDF3F2 /* OrderTableViewCell.h */,
+				B89CFE291C8C406000BDF3F2 /* OrderTableViewCell.m */,
 			);
 			path = "OrderSalad View";
 			sourceTree = "<group>";
@@ -407,10 +416,10 @@
 		B86BB0121C882678001CB94A /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B86BB0131C882678001CB94A /* SideMenuViewController.h */,
-				B86BB0141C882678001CB94A /* SideMenuViewController.m */,
-				B86BB0151C882678001CB94A /* SWRevealViewController.h */,
-				B86BB0161C882678001CB94A /* SWRevealViewController.m */,
+				B89CFE251C8C08F200BDF3F2 /* SWRevealViewController.h */,
+				B89CFE261C8C08F200BDF3F2 /* SWRevealViewController.m */,
+				B89CFE221C8C047500BDF3F2 /* SideMenuViewController.h */,
+				B89CFE231C8C047500BDF3F2 /* SideMenuViewController.m */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -457,6 +466,8 @@
 		B8E798391C85843000259465 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B89CFE1D1C8BF89200BDF3F2 /* nav_Bar.png */,
+				B89CFE1E1C8BF89200BDF3F2 /* nav_Bar@2x.png */,
 				B86BB0191C882A05001CB94A /* menu.png */,
 				B86BB01F1C884D77001CB94A /* back.png */,
 				B86BB0201C884D77001CB94A /* x.png */,
@@ -561,6 +572,7 @@
 			files = (
 				B84A908C1C705FC500D214F1 /* LaunchScreen.storyboard in Resources */,
 				B8E7984D1C85843000259465 /* primavera.png in Resources */,
+				B89CFE201C8BF89200BDF3F2 /* nav_Bar@2x.png in Resources */,
 				B86BB01B1C882A05001CB94A /* menu.png in Resources */,
 				B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */,
 				B8E7984C1C85843000259465 /* halloumi.png in Resources */,
@@ -578,6 +590,7 @@
 				B8E798511C85843000259465 /* orderhistory.png in Resources */,
 				B86BB0211C884D77001CB94A /* back.png in Resources */,
 				B84A90871C705FC500D214F1 /* Main.storyboard in Resources */,
+				B89CFE1F1C8BF89200BDF3F2 /* nav_Bar.png in Resources */,
 				B8E798521C85843000259465 /* profile.png in Resources */,
 				B86BB0091C88095D001CB94A /* SaladTableViewCell.xib in Resources */,
 			);
@@ -590,7 +603,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B86BB0171C882678001CB94A /* SideMenuViewController.m in Sources */,
 				B86BB0021C88095D001CB94A /* FM_Color.m in Sources */,
 				B86BAFFC1C88095D001CB94A /* ViewController.m in Sources */,
 				B86BB0061C88095D001CB94A /* FM_SaladStack.m in Sources */,
@@ -603,8 +615,10 @@
 				B86BB0031C88095D001CB94A /* FM_Font.m in Sources */,
 				B86BB0011C88095D001CB94A /* SignupViewController.m in Sources */,
 				B86BB00A1C88095D001CB94A /* FM_ScrollView.m in Sources */,
+				B89CFE241C8C047500BDF3F2 /* SideMenuViewController.m in Sources */,
 				B86BAFFE1C88095D001CB94A /* ConfirmSalad.m in Sources */,
-				B86BB0181C882678001CB94A /* SWRevealViewController.m in Sources */,
+				B89CFE2A1C8C406000BDF3F2 /* OrderTableViewCell.m in Sources */,
+				B89CFE271C8C08F200BDF3F2 /* SWRevealViewController.m in Sources */,
 				B86BAFFB1C88095D001CB94A /* HomeViewController.m in Sources */,
 				B86BAFF91C88095D001CB94A /* AppDelegate.m in Sources */,
 				B86BB0001C88095D001CB94A /* OrderViewController.m in Sources */,
@@ -756,11 +770,15 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
 				INFOPLIST_FILE = FoodMaz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FoodMaz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -807,11 +825,15 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
 				INFOPLIST_FILE = FoodMaz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FoodMaz;
 				PRODUCT_NAME = "$(TARGET_NAME)";

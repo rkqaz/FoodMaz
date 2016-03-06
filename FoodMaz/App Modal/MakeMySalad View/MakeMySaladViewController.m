@@ -30,6 +30,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    [FM_SaladManager sharedManager].salad = nil;
+    
+    //Add Green color to topBar
+    
+    [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
+
     //register Nib for Tableview
     [self.saladstackTable registerNib:[UINib nibWithNibName:@"SaladTableViewCell" bundle:nil] forCellReuseIdentifier:kCellIdentifier];
     
@@ -44,6 +51,7 @@
     
     //self.saladstackTable.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
+    
     [self.navigationItem setTitle:@"CREATE YOUR OWN SALAD"];
 
     UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back.png"] style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction)];
@@ -51,10 +59,16 @@
     self.navigationItem.leftBarButtonItem = leftBtn;
     
     
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"x.png"] style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction)];
+    [[UINavigationBar appearance] setBarTintColor:[FM_Color greenColor]];
+    
+    [[UINavigationBar appearance] setTintColor:[FM_Color greenColor]];
+
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"x.png"] style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(rightRevealToggle:)];
     
     self.navigationItem.rightBarButtonItem = rightBtn;
 
+    // Set the gesture
+    //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     
 }
@@ -253,23 +267,23 @@
 - (void)backButtonAction
 {
  
+    [[FM_SaladManager sharedManager]setSalad:nil];
     [self.navigationController popViewControllerAnimated:YES];
-    
 }
 - (IBAction)maktItForMeButonAction:(id)sender {
     
     CGRect _frame = [UIApplication sharedApplication].keyWindow.frame;
     
     _frame.origin.y = 0.0f;
-    
-   // _frame.size.height += 64.0f;
-    
-
-    FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
-    
-    [self.view addSubview:popUp];
-
-    return;
+//    
+//   // _frame.size.height += 64.0f;
+//    
+//
+//    FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
+//    
+//    [self.view addSubview:popUp];
+//
+//    return;
     FM_Salad *salad = [[FM_SaladManager sharedManager] salad];
     
     if (salad) {
@@ -283,7 +297,7 @@
             
                 FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
                 
-                [[[UIApplication sharedApplication] keyWindow] addSubview:popUp];
+                [[[UIApplication sharedApplication] keyWindow] insertSubview:popUp aboveSubview:self.view];
                 
                }
         }];

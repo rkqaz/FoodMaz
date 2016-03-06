@@ -58,7 +58,7 @@
 
     if ([PFUser currentUser]) {
     
-        UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];//RevealView
+        UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];//RevealController HomeViewController
         
         [self.window setRootViewController:rootViewController];
         

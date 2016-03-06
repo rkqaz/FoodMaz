@@ -14,6 +14,11 @@
 
 #define isDressing(type) [type isEqualToString:kDressing]
 
+#define kMAX_INGREDIENT_COUNT 6
+
+#define kMAX_BEDS 1
+
+#define kMAX_DRESSING_COUNT 1
 
 
 @implementation FM_Salad
@@ -79,7 +84,7 @@
     
     if (self.ingredients && self.ingredients.count > 0) {
         
-        if (self.ingredients.count >= 6) {
+        if (self.ingredients.count >= kMAX_INGREDIENT_COUNT) {
             
             //Display alert User can choose only 6 Ingredients
             
@@ -233,7 +238,7 @@
     if (nil == self.bed || !self.bed) {
     
         message = @"Please select Bed";
-    } else if (self.ingredients && self.ingredients.count < 6) {
+    } else if (self.ingredients && self.ingredients.count < kMAX_DRESSING_COUNT) {
     
      message = @"Please select minimum 6 Ingredients";
         
@@ -245,7 +250,6 @@
     FM_Log(@"Salad Price:%i",(int)self.price);
     result(message);
 }
-
 
 
 
