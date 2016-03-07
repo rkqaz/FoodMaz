@@ -22,6 +22,8 @@
 @interface MakeMySaladViewController ()
 
 @property (nonatomic,strong)NSArray *saladStackdata; //<-- Metadata from Parse
+
+@property (nonatomic,retain)FM_PopUP *popUP;
 @end
 
 @implementation MakeMySaladViewController
@@ -224,7 +226,24 @@
 }
 
 
+#pragma mark - Confirm Salad Delegate Methods
 
+
+ - (void)errorInconfirmSalad:(NSString *)error
+{
+
+    [self showAlertWithMessage:error];
+}
+
+- (void)confirmSaladSuccess
+{
+
+    [self.popUP.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    [self.popUP removeFromSuperview];
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
 #pragma mark - Custom UI Methods
 
 /*
@@ -275,15 +294,6 @@
     CGRect _frame = [UIApplication sharedApplication].keyWindow.frame;
     
     _frame.origin.y = 0.0f;
-//    
-//   // _frame.size.height += 64.0f;
-//    
-//
-//    FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
-//    
-//    [self.view addSubview:popUp];
-//
-//    return;
     FM_Salad *salad = [[FM_SaladManager sharedManager] salad];
     
     if (salad) {
@@ -295,9 +305,17 @@
                 [self showAlertWithMessage:errorMessage];
             } else {
             
-                FM_PopUP * popUp = [[FM_PopUP alloc] initWithFrame:_frame];
+                if (self.popUP) {
                 
-                [[[UIApplication sharedApplication] keyWindow] insertSubview:popUp aboveSubview:self.view];
+                    self.popUP = nil;
+                    
+                    
+                }
+                self.popUP = [[FM_PopUP alloc] initWithFrame:_frame];
+                
+                self.popUP.confirmSaladView.ConfirmSaladDelegate = self;
+                
+                [[[UIApplication sharedApplication] keyWindow] insertSubview:self.popUP aboveSubview:self.view];
                 
                }
         }];

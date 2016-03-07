@@ -60,18 +60,18 @@
         
         float height = 300;
 
-        ConfirmSalad *confirmSalad = [ [ [ NSBundle mainBundle ] loadNibNamed:@"ConfirmSalad" owner:self options:nil ] firstObject ];
+        self.confirmSaladView = [ [ [ NSBundle mainBundle ] loadNibNamed:@"ConfirmSalad" owner:self options:nil ] firstObject ];
         
-        [confirmSalad setFrame:CGRectMake((CGRectGetWidth(self.frame) - width)/2, (CGRectGetHeight(self.frame) - height)/2 - 30, width, height)];
-        
-        
-        [confirmSalad.cancelButton addTarget:self action:@selector(cancelButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.confirmSaladView setFrame:CGRectMake((CGRectGetWidth(self.frame) - width)/2, (CGRectGetHeight(self.frame) - height)/2 - 30, width, height)];
         
         
-        [confirmSalad.addToBasket addTarget:self action:@selector(addtoBasketButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.confirmSaladView.cancelButton addTarget:self action:@selector(cancelButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        //[self.confirmSaladView.addToBasket addTarget:self action:@selector(addtoBasketButtonAction) forControlEvents:UIControlEventTouchUpInside];
 
         
-        [self addSubview:confirmSalad];
+        [self addSubview:self.confirmSaladView];
         
     
     
@@ -84,16 +84,32 @@
 {
 
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    self.confirmSaladView = nil;
+    
     [self removeFromSuperview ];
 }
 
 - (void)addtoBasketButtonAction
 {
     
-    [[[FM_SaladManager sharedManager] saladData] addObject:[FM_SaladManager sharedManager].salad];
+    //Add to Salad data based on quantity
+    
+
+    NSInteger quantity = [[FM_SaladManager sharedManager].salad.quantity integerValue];
+    
+    for (int i = 0; i < quantity; i ++) {
+        
+        [[[FM_SaladManager sharedManager] saladData] addObject:[FM_SaladManager sharedManager].salad];
+
+    }
+    
     
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self removeFromSuperview ];
+    
 
+   // [[[[[UIApplication sharedApplication]keyWindow] rootViewController] navigationController] popViewControllerAnimated:YES];
+    
 }
 @end

@@ -119,6 +119,9 @@
         //Add status
         order[@"Status"] = @"Open";
         
+        //customised
+        order[@"Customised"] =  [NSNumber numberWithBool:salad.customised];
+        
         if (salad.customised) {
         
             //add Ingredients
@@ -143,43 +146,30 @@
             
             if (succeeded) {
                 
-                FM_Log(@"Success");
+                [[FM_SaladManager sharedManager].saladData removeObjectIdenticalTo:salad];
+                //Add Order relation to User
+                PFUser *user = [PFUser currentUser];
+                PFRelation *relation = [user relationForKey:@"Orders"];
+                [relation addObject:order];
+                [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                    if (succeeded) {
+                    
+                        FM_Log(@"Success");
+
+                    } else {
+                    
+                        FM_Log(@"Error:%@",error.localizedDescription);
+
+                    }
+                }];
             } else {
                 
-                FM_Log(@"Error:%@",error.localizedDescription);
+                [self showAlertWithMessage:error.localizedDescription];
             }
         }];
 
         
     }
     
-//    [salads enumerateObjectsUsingBlock:^(FM_Salad *  _Nonnull salad, NSUInteger idx, BOOL * _Nonnull stop) {
-//        
-//        PFObject * order = [PFObject objectWithClassName:@"Order"];
-//        
-//        order[@"name"] = salad.name;
-//        
-//        order[@"Price"] = [NSNumber numberWithInt:(int)salad.price];
-//        
-//        // Example array of strings
-//        // for-in will let you loop over the counted set
-//
-//       // order[@"Bed"] = salad.bed;
-//        
-//       // order[@"Ingredients"] = salad.ingredients;
-//        
-//        [order saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-//            
-//            if (succeeded) {
-//            
-//                FM_Log(@"Success");
-//            } else {
-//            
-//                FM_Log(@"Error:%@",error.localizedDescription);
-//            }
-//        }];
-//
-//        
-//    }];
 }
 @end

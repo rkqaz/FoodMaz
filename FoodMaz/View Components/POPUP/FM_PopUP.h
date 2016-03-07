@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ConfirmSalad.h"
+
 @interface FM_PopUP : UIView
 
+@property (nonatomic,retain)ConfirmSalad *confirmSaladView;
 @end

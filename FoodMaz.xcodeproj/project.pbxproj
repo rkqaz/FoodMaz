@@ -56,13 +56,13 @@
 		B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6A01C7981720023FEF1 /* libz.tbd */; };
 		B89CFE1F1C8BF89200BDF3F2 /* nav_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B89CFE1D1C8BF89200BDF3F2 /* nav_Bar.png */; };
 		B89CFE201C8BF89200BDF3F2 /* nav_Bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89CFE1E1C8BF89200BDF3F2 /* nav_Bar@2x.png */; };
-		B89CFE211C8C03E500BDF3F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
 		B89CFE241C8C047500BDF3F2 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CFE231C8C047500BDF3F2 /* SideMenuViewController.m */; };
 		B89CFE271C8C08F200BDF3F2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CFE261C8C08F200BDF3F2 /* SWRevealViewController.m */; };
 		B89CFE2A1C8C406000BDF3F2 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CFE291C8C406000BDF3F2 /* OrderTableViewCell.m */; };
 		B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B01C7AD53D003DB59D /* Bolts.framework */; };
 		B8C949B41C7AD53D003DB59D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949B11C7AD53D003DB59D /* FBSDKCoreKit.framework */; };
 		B8C949BB1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C949BA1C7B3A30003DB59D /* ParseFacebookUtilsV4.framework */; };
+		B8E40F0E1C8DB316008A021F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
 		B8E798481C85843000259465 /* foodbasket.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983B1C85843000259465 /* foodbasket.png */; };
 		B8E798491C85843000259465 /* saladbowl.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983C1C85843000259465 /* saladbowl.png */; };
 		B8E7984A1C85843000259465 /* spoonandfork.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7983D1C85843000259465 /* spoonandfork.png */; };
@@ -176,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89CFE211C8C03E500BDF3F2 /* Parse.framework in Frameworks */,
+				B8E40F0E1C8DB316008A021F /* Parse.framework in Frameworks */,
 				B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */,
 				B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */,
 				B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */,
@@ -774,6 +774,10 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
@@ -795,6 +799,10 @@
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/OtherFramework",
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",

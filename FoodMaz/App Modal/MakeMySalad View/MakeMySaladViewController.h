@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 #import "FM_ScrollView.h"
+#import "ConfirmSalad.h"
 
 
-@interface MakeMySaladViewController : FM_BaseViewController<UITableViewDataSource,UITableViewDelegate,FM_ScrollViewDelegate>
+@interface MakeMySaladViewController : FM_BaseViewController <UITableViewDataSource,UITableViewDelegate,FM_ScrollViewDelegate,ConfirmSaladDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *saladstackTable;
 @property (weak, nonatomic) IBOutlet UITextView *healthTipTextView;
