@@ -94,82 +94,105 @@
 - (IBAction)delivertoMeAction:(UIButton *)sender {
     
     
+    
     NSArray *salads = [[FM_SaladManager sharedManager] saladData];
     
-    NSArray *array = [NSArray arrayWithArray:salads];
+    
+    if (salads.count > 0) {
+    
+        if (self.orderInstructions.text.length > 0) {
+            
+            
 
-    
-    NSCountedSet *countedSet = [[NSCountedSet alloc] initWithArray: array];
-    
-    for (FM_Salad *salad in countedSet) {
-    
-        NSLog(@"salsla:%@ +++ %d",salad.name,(int)[countedSet countForObject:salad]);
-        
-        //create Order Object
-        PFObject * order = [PFObject objectWithClassName:@"Order"];
-        
-        //give name
-        order[@"Name"] = salad.name;
-        
-        //give quantity
-        order[@"Quantity"] = [NSNumber numberWithInt:(int)[countedSet countForObject:salad]];
-        //Add User
-        order[@"User"] = [PFUser currentUser].email;
-        
-        //Add status
-        order[@"Status"] = @"Open";
-        
-        //customised
-        order[@"Customised"] =  [NSNumber numberWithBool:salad.customised];
-        
-        if (salad.customised) {
-        
-            //add Ingredients
-            NSArray *ingredients = [salad.ingredients valueForKey:@"name"];
+                NSArray *array = [NSArray arrayWithArray:salads];
+                
+                NSCountedSet *countedSet = [[NSCountedSet alloc] initWithArray: array];
+                
+                for (FM_Salad *salad in countedSet) {
+                        
+                        NSLog(@"salsla:%@ +++ %d",salad.name,(int)[countedSet countForObject:salad]);
+                        
+                        //create Order Object
+                        PFObject * order = [PFObject objectWithClassName:@"Order"];
+                        
+                        //give name
+                        order[@"Name"] = salad.name;
+                        
+                        //give quantity
+                        order[@"Quantity"] = [NSNumber numberWithInt:(int)[countedSet countForObject:salad]];
+                        //Add User
+                        order[@"User"] = [PFUser currentUser].email;
+                        
+                        //Add status
+                        order[@"Status"] = @"Open";
+                        
+                        //customised
+                        order[@"Customised"] =  [NSNumber numberWithBool:salad.customised];
+                        
+                        if (salad.customised) {
+                            
+                            //add Ingredients
+                            NSArray *ingredients = [salad.ingredients valueForKey:@"name"];
+                            
+                            FM_Log(@"ingredients:%@",ingredients);
+                            
+                            order[@"Ingredients"] = ingredients;
+                            
+                            //Quantity
+                            order[@"Quantity"] = salad.quantity;
+                            
+                            //add Bed
+                            order[@"Bed"] = salad.bed[@"name"];
+                            
+                            //add Dressing
+                            order[@"Dressing"] = salad.dressing[@"name"];
+                        }
+                        
+                        //add delivery instructions
+                        order[@"DeliveryInstructions"] = self.orderInstructions.text;
+                        
+                        //Upload data to Parse
+                        [order saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                            
+                            if (succeeded) {
+                                
+                                  [[FM_SaladManager sharedManager].saladData removeObjectIdenticalTo:salad];
+                                //Add Order relation to User
+                                 PFUser *user = [PFUser currentUser];
+                                 PFRelation *relation = [user relationForKey:@"Orders"];
+                                 [relation addObject:order];
+                                 [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                                    if (succeeded) {
+                                        
+                                        FM_Log(@"Success");
+                                        
+                                    } else {
+                                        
+                                        FM_Log(@"Error:%@",error.localizedDescription);
+                                        
+                                    }
+                                }];
+                            } else {
+                                
+                                [self showAlertWithMessage:error.localizedDescription];
+                            }
+                        }];
+                        
+                        
+                }
             
-            FM_Log(@"ingredients:%@",ingredients);
             
-            order[@"Ingredients"] = ingredients;
-            
-            //Quantity
-            order[@"Quantity"] = salad.quantity;
-            
-            //add Bed
-            order[@"Bed"] = salad.bed[@"name"];
-            
-            //add Dressing
-            order[@"Dressing"] = salad.dressing[@"name"];
+        } else {
+        
+            [self showAlertWithMessage:@"Please enter delivery instructions"];
+
+        
         }
-
-        //Upload data to Parse
-        [order saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-            
-            if (succeeded) {
-                
-                [[FM_SaladManager sharedManager].saladData removeObjectIdenticalTo:salad];
-                //Add Order relation to User
-                PFUser *user = [PFUser currentUser];
-                PFRelation *relation = [user relationForKey:@"Orders"];
-                [relation addObject:order];
-                [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-                    if (succeeded) {
-                    
-                        FM_Log(@"Success");
-
-                    } else {
-                    
-                        FM_Log(@"Error:%@",error.localizedDescription);
-
-                    }
-                }];
-            } else {
-                
-                [self showAlertWithMessage:error.localizedDescription];
-            }
-        }];
-
-        
+    } else {
+    
+        [self showAlertWithMessage:@"Please select a Salad"];
     }
+    
     
 }
 @end

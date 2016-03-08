@@ -61,7 +61,7 @@
     [myAlertController addAction: ok];
     
     //Step 4: Present the alert to the user
-    [self presentViewController:myAlertController animated:YES completion:nil];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:myAlertController animated:YES completion:nil];
     
     
     
