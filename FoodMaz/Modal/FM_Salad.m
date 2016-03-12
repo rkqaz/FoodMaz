@@ -238,7 +238,7 @@
     if (nil == self.bed || !self.bed) {
     
         message = @"Please select Bed";
-    } else if (self.ingredients && self.ingredients.count < kMAX_DRESSING_COUNT) {
+    } else if (self.ingredients && self.ingredients.count < kMAX_INGREDIENT_COUNT) {
     
      message = @"Please select minimum 6 Ingredients";
         
