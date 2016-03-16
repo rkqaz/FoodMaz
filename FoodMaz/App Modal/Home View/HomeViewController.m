@@ -28,15 +28,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    
-//    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
 //    self.menuButton .target = self.revealViewController;
 //        self.menuButton.action = @selector(revealToggle:);
 //    
 //    // Set the gesture
 //    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 //    
-
+//
     
 
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_Bar.png"]];
@@ -68,6 +68,13 @@
     
     self.selectedSaladImage.hidden = YES;
     
+    
+    //set CurrentUser to Installation Object
+    
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    
+    [currentInstallation setObject:[PFUser currentUser] forKey:@"User"];
+    [currentInstallation saveInBackground];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -139,6 +146,7 @@
     self.priceLBL.attributedText = attributedStr;
 
 }
+
 
 
 - (void)updateBasket

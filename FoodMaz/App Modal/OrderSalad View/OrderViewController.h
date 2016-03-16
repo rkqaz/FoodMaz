@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderViewController : FM_BaseViewController<UITableViewDataSource,UITableViewDelegate>
+@interface OrderViewController : FM_BaseViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 - (IBAction)delivertoMeAction:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *totalPrice;
 

@@ -121,11 +121,13 @@
                         //give quantity
                         order[@"Quantity"] = [NSNumber numberWithInt:(int)[countedSet countForObject:salad]];
                         //Add User
-                        order[@"User"] = [PFUser currentUser].email;
+                        order[@"User"] = [PFUser currentUser];
                         
                         //Add status
                         order[@"Status"] = @"Open";
-                        
+                    
+                        //Add Owner Email
+                        order[@"Owner"] = [PFUser currentUser].email;
                         //customised
                         order[@"Customised"] =  [NSNumber numberWithBool:salad.customised];
                         
@@ -194,5 +196,12 @@
     }
     
     
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+
+    [textField resignFirstResponder];
+    return YES;
 }
 @end

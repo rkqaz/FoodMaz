@@ -1657,13 +1657,17 @@ const int FrontViewPositionNone = 0xff;
         //Try each segue separately so it doesn't break prematurely if either Rear or Right views are not used.
         @try
         {
-            [self performSegueWithIdentifier:SWSegueRearIdentifier sender:nil];
+            UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"yourMenuController storyboard Identifier"];
+            SWRevealViewControllerSegueSetController *segue = [[SWRevealViewControllerSegueSetController alloc] initWithIdentifier:SWSegueRearIdentifier source:self destination:controller];
+            [segue perform];
         }
         @catch(NSException *exception) {}
         
         @try
         {
-            [self performSegueWithIdentifier:SWSegueFrontIdentifier sender:nil];
+            UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"your front viewcontroller storyboard Identifier"];
+            SWRevealViewControllerSegueSetController *segue = [[SWRevealViewControllerSegueSetController alloc] initWithIdentifier:SWSegueFrontIdentifier source:self destination:controller];
+            [segue perform];
         }
         @catch(NSException *exception) {}
         
@@ -1674,7 +1678,6 @@ const int FrontViewPositionNone = 0xff;
         @catch(NSException *exception) {}
     }
 }
-
 
 #pragma mark state preservation / restoration
 

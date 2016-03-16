@@ -10,7 +10,7 @@
 		B81ED0A71C79908900A53A96 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A61C79908900A53A96 /* ParseFacebookUtils.framework */; };
 		B81ED0A91C79923D00A53A96 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */; };
 		B81ED0AF1C79A3D700A53A96 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = B81ED0AE1C79A3D700A53A96 /* Comms.m */; };
-		B849D7AB1C8EA0FF00D3F01C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
+		B82C7BCA1C941F36004F79BE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82C7BC81C941F36004F79BE /* MainStoryboard.storyboard */; };
 		B84A907E1C705FC500D214F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B84A907D1C705FC500D214F1 /* main.m */; };
 		B84A90871C705FC500D214F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84A90851C705FC500D214F1 /* Main.storyboard */; };
 		B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84A90881C705FC500D214F1 /* Assets.xcassets */; };
@@ -40,10 +40,10 @@
 		B86BB01E1C884769001CB94A /* foodmazlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01D1C884769001CB94A /* foodmazlogo.png */; };
 		B86BB0211C884D77001CB94A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB01F1C884D77001CB94A /* back.png */; };
 		B86BB0221C884D77001CB94A /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = B86BB0201C884D77001CB94A /* x.png */; };
+		B88AD8421C9922F500AFC006 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E808B1C8618E200CD7A0E /* Parse.framework */; };
 		B892B6851C7980D00023FEF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6841C7980D00023FEF1 /* QuartzCore.framework */; };
 		B892B6871C7980D70023FEF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6861C7980D70023FEF1 /* Security.framework */; };
 		B892B6891C7980E00023FEF1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6881C7980E00023FEF1 /* Social.framework */; };
-		B892B68B1C7980EB0023FEF1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B68A1C7980EB0023FEF1 /* StoreKit.framework */; };
 		B892B68D1C7980F90023FEF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B68C1C7980F90023FEF1 /* SystemConfiguration.framework */; };
 		B892B68F1C7981030023FEF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B68E1C7981030023FEF1 /* UIKit.framework */; };
 		B892B6911C7981080023FEF1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892B6901C7981080023FEF1 /* MobileCoreServices.framework */; };
@@ -82,6 +82,7 @@
 		B81ED0A81C79923D00A53A96 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B81ED0AD1C79A3D700A53A96 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
 		B81ED0AE1C79A3D700A53A96 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
+		B82C7BC91C941F36004F79BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B84A90791C705FC500D214F1 /* FoodMaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84A907D1C705FC500D214F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B84A90861C705FC500D214F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 		B892B6841C7980D00023FEF1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B892B6861C7980D70023FEF1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B892B6881C7980E00023FEF1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		B892B68A1C7980EB0023FEF1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B892B68C1C7980F90023FEF1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B892B68E1C7981030023FEF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B892B6901C7981080023FEF1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -176,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B849D7AB1C8EA0FF00D3F01C /* Parse.framework in Frameworks */,
+				B88AD8421C9922F500AFC006 /* Parse.framework in Frameworks */,
 				B85360F31C82DCA600CD0276 /* ParseUI.framework in Frameworks */,
 				B892B6A11C7981720023FEF1 /* libz.tbd in Frameworks */,
 				B8C949B31C7AD53D003DB59D /* Bolts.framework in Frameworks */,
@@ -193,7 +193,6 @@
 				B81ED0A91C79923D00A53A96 /* FBSDKLoginKit.framework in Frameworks */,
 				B892B68F1C7981030023FEF1 /* UIKit.framework in Frameworks */,
 				B892B68D1C7980F90023FEF1 /* SystemConfiguration.framework in Frameworks */,
-				B892B68B1C7980EB0023FEF1 /* StoreKit.framework in Frameworks */,
 				B892B6891C7980E00023FEF1 /* Social.framework in Frameworks */,
 				B892B6871C7980D70023FEF1 /* Security.framework in Frameworks */,
 				B81ED0A71C79908900A53A96 /* ParseFacebookUtils.framework in Frameworks */,
@@ -239,6 +238,7 @@
 				B8E798391C85843000259465 /* Images */,
 				B81ED0AC1C79A3D700A53A96 /* Utilities */,
 				B84A90851C705FC500D214F1 /* Main.storyboard */,
+				B82C7BC81C941F36004F79BE /* MainStoryboard.storyboard */,
 				B84A90881C705FC500D214F1 /* Assets.xcassets */,
 				B84A908A1C705FC500D214F1 /* LaunchScreen.storyboard */,
 				B84A908D1C705FC500D214F1 /* Info.plist */,
@@ -439,7 +439,6 @@
 				B892B6901C7981080023FEF1 /* MobileCoreServices.framework */,
 				B892B68E1C7981030023FEF1 /* UIKit.framework */,
 				B892B68C1C7980F90023FEF1 /* SystemConfiguration.framework */,
-				B892B68A1C7980EB0023FEF1 /* StoreKit.framework */,
 				B892B6881C7980E00023FEF1 /* Social.framework */,
 				B892B6861C7980D70023FEF1 /* Security.framework */,
 				B892B6841C7980D00023FEF1 /* QuartzCore.framework */,
@@ -544,6 +543,14 @@
 					B84A90781C705FC500D214F1 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = BML7Y29427;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -576,6 +583,7 @@
 				B86BB01B1C882A05001CB94A /* menu.png in Resources */,
 				B84A90891C705FC500D214F1 /* Assets.xcassets in Resources */,
 				B8E7984C1C85843000259465 /* halloumi.png in Resources */,
+				B82C7BCA1C941F36004F79BE /* MainStoryboard.storyboard in Resources */,
 				B86BB01E1C884769001CB94A /* foodmazlogo.png in Resources */,
 				B86BAFFF1C88095D001CB94A /* ConfirmSalad.xib in Resources */,
 				B8E798501C85843000259465 /* house.png in Resources */,
@@ -631,6 +639,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B82C7BC81C941F36004F79BE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B82C7BC91C941F36004F79BE /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		B84A90851C705FC500D214F1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -735,6 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FoodMaz/Parse",
@@ -780,14 +797,28 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
 				INFOPLIST_FILE = FoodMaz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.FoodMaz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodmaz.pushnotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -796,6 +827,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FoodMaz/Parse",
@@ -841,14 +873,28 @@
 					Framework,
 					"$(PROJECT_DIR)/FoodMaz/Parse",
 					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
+					"$(PROJECT_DIR)/FoodMaz/Parse",
+					Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoodMaz/FoodMaz-Prefix.pch";
 				INFOPLIST_FILE = FoodMaz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.FoodMaz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodmaz.pushnotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
